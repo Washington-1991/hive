@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.1].define(version: 2024_03_06_135457) do
+=======
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_133931) do
+>>>>>>> master
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "aptitudes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "shoulder"
+    t.string "hip"
+    t.string "ankle"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_aptitudes_on_user_id"
+  end
 
   create_table "programs", force: :cascade do |t|
     t.text "name"
@@ -32,6 +46,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_135457) do
     t.index ["program_id"], name: "index_programs_workouts_on_program_id"
   end
 
+  create_table "user_weights", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.float "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_weights_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -47,11 +69,20 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_135457) do
   create_table "workouts", force: :cascade do |t|
     t.string "name"
     t.string "photo"
+<<<<<<< HEAD
     t.string "description"
+=======
+    t.string "decription"
+>>>>>>> master
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  add_foreign_key "aptitudes", "users"
+>>>>>>> master
   add_foreign_key "programs", "users"
   add_foreign_key "programs_workouts", "programs"
+  add_foreign_key "user_weights", "users"
 end
