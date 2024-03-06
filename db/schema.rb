@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_06_131146) do
+
+
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_132114) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,12 +45,21 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_131146) do
     t.index ["program_id"], name: "index_programs_workouts_on_program_id"
   end
 
+
   create_table "user_aptitudes", force: :cascade do |t|
     t.float "weight"
     t.bigint "users_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["users_id"], name: "index_user_aptitudes_on_users_id"
+
+  create_table "user_weights", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.float "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_weights_on_user_id"
+
   end
 
   create_table "users", force: :cascade do |t|
@@ -65,5 +77,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_131146) do
   add_foreign_key "aptitudes", "users", column: "users_id"
   add_foreign_key "programs", "users"
   add_foreign_key "programs_workouts", "programs"
+
   add_foreign_key "user_aptitudes", "users", column: "users_id"
+
+  add_foreign_key "user_weights", "users"
+
 end
