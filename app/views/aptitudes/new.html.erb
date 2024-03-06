@@ -1,0 +1,34 @@
+<div class="aptitude">
+
+<h1 class="title"> Test de Mobilité  </h1>
+
+<h2> Bienvenue dans votre test de mobilité ! </h2>
+
+<p> Durée moyenne : 12 min </p>
+<p> Testez vous au moins 2 heures après le lever </p>
+<p> Évitez de vous tester juste après un entraînement </p>
+
+
+<%= simple_form_for @aptitude do |f| %>
+  <%= f.input :shoulder, label: "Quelle est votre mobilité d'épaule ?", as: :select, collection: [['Faible', 'faible'], ['Moyenne', 'moyenne'], ['Élevée', 'elevée']], prompt: 'Choisissez une option'%>
+    <%= image_tag("IMG_1603.jpg", class: "option-image") %>
+    <%= image_tag("IMG_1602.jpg", class: "option-image") %>
+    <%= image_tag("IMG_1604.jpg", class: "option-image") %>
+
+  <%= f.input :hip, label: "Quelle est votre mobilité de hanche ?", as: :select, collection: [['Faible', 'faible'], ['Moyenne', 'moyenne'], ['Élevée', 'elevée']], prompt: 'Choisissez une option' %>
+    <%= image_tag("IMG_1603.jpg", class: "option-image") %>
+    <%= image_tag("IMG_1602.jpg", class: "option-image") %>
+    <%= image_tag("IMG_1604.jpg", class: "option-image") %>
+
+  <%= f.input :ankle, label: "Quelle est votre mobilité de cheville ?", as: :select, collection: [['Faible', 'faible'], ['Moyenne', 'moyenne'], ['Élevée', 'elevée']], prompt: 'Choisissez une option' %>
+
+
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+
+
+<div class="actions">
+  <%= link_to 'Retour', aptitudes_path %>
+</div>
+
+</div>
