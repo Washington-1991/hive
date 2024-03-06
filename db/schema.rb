@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_135457) do
+=======
 ActiveRecord::Schema[7.1].define(version: 2024_03_06_133931) do
+>>>>>>> master
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -65,12 +69,19 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_133931) do
   create_table "workouts", force: :cascade do |t|
     t.string "name"
     t.string "photo"
+<<<<<<< HEAD
+    t.string "description"
+=======
     t.string "decription"
+>>>>>>> master
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
   add_foreign_key "aptitudes", "users"
+>>>>>>> master
   add_foreign_key "programs", "users"
   add_foreign_key "programs_workouts", "programs"
   add_foreign_key "user_weights", "users"
