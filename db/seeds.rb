@@ -1,9 +1,34 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+require 'uri'
+require 'net/http'
+
+# Create workout
+workout = Workout.create(name: "name", photo: "workout.jpg", description: "description")
+
+url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["X-RapidAPI-Key"] = ENV["API_SPORT"]
+request["X-RapidAPI-Host"] = 'exercisedb.p.rapidapi.com'
+
+response = http.request(request)
+
+require 'json'
+
+body = response.read_body
+data = JSON.parse(body)
+
+data.each do |hash_exercise|
+  # Create Exercice instances with the correct association
+  Exercice.create(
+    name: hash_exercise["name"],
+    workout_id: workout.id, # Use workout_id instead of workout
+    photo: hash_exercise["workout.jpg"],
+    time: hash_exercise["time"],
+    repetition: hash_exercise["repetition"],
+    calories: hash_exercise["calories"],
+    type: hash_exercise["type"]
+  )
+end
