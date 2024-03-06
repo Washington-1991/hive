@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_06_124831) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_131146) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "aptitudes", force: :cascade do |t|
+    t.bigint "users_id", null: false
+    t.string "shoulder"
+    t.string "hip"
+    t.string "ankle"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["users_id"], name: "index_aptitudes_on_users_id"
+  end
 
   create_table "programs", force: :cascade do |t|
     t.text "name"
@@ -32,6 +42,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_124831) do
     t.index ["program_id"], name: "index_programs_workouts_on_program_id"
   end
 
+  create_table "user_aptitudes", force: :cascade do |t|
+    t.float "weight"
+    t.bigint "users_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["users_id"], name: "index_user_aptitudes_on_users_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -44,6 +62,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_124831) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "aptitudes", "users", column: "users_id"
   add_foreign_key "programs", "users"
   add_foreign_key "programs_workouts", "programs"
+  add_foreign_key "user_aptitudes", "users", column: "users_id"
 end
