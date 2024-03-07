@@ -1,34 +1,37 @@
 require 'uri'
 require 'net/http'
 
+puts " create user "
+
+User.create!(email: "nico@mail.com", password:"coucou")
 # Create workout
 workout = Workout.create(name: "name", photo: "workout.jpg", description: "description")
 
-url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
+# url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
 
-http = Net::HTTP.new(url.host, url.port)
-http.use_ssl = true
+# http = Net::HTTP.new(url.host, url.port)
+# http.use_ssl = true
 
-request = Net::HTTP::Get.new(url)
-request["X-RapidAPI-Key"] = ENV["API_SPORT"]
-request["X-RapidAPI-Host"] = 'exercisedb.p.rapidapi.com'
+# request = Net::HTTP::Get.new(url)
+# request["X-RapidAPI-Key"] = ENV["API_SPORT"]
+# request["X-RapidAPI-Host"] = 'exercisedb.p.rapidapi.com'
 
-response = http.request(request)
+# response = http.request(request)
 
-require 'json'
+# require 'json'
 
-body = response.read_body
-data = JSON.parse(body)
+# body = response.read_body
+# data = JSON.parse(body)
 
-data.each do |hash_exercise|
-  # Create Exercice instances with the correct association
-  Exercice.create(
-    name: hash_exercise["name"],
-    workout_id: workout.id, # Use workout_id instead of workout
-    photo: hash_exercise["workout.jpg"],
-    time: hash_exercise["time"],
-    repetition: hash_exercise["repetition"],
-    calories: hash_exercise["calories"],
-    type: hash_exercise["type"]
-  )
-end
+# data.each do |hash_exercise|
+#   # Create Exercice instances with the correct association
+#   Exercice.create(
+#     name: hash_exercise["name"],
+#     workout_id: workout.id, # Use workout_id instead of workout
+#     photo: hash_exercise["workout.jpg"],
+#     time: hash_exercise["time"],
+#     repetition: hash_exercise["repetition"],
+#     calories: hash_exercise["calories"],
+#     type: hash_exercise["type"]
+#   )
+# end
