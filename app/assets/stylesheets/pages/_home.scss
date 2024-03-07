@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+.show-container{
+justify-content: center;
+border: 1px solid #ffffff;
+margin-top: 16px;
+margin-bottom: 16px;
+margin-left: 16px;
+margin-right: 16px;
+height: calc(100vh - 32px);
+height: calc(100vh - 32px);
+padding: 16px;
+}
+
+.card-home-information {
+background-image: url("hive-logo.png");
+background-size: cover;
+position: absolute;
+border: 1px solid #ffffff;
+height: 40%;
+width: 80%;
+}
