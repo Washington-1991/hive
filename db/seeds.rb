@@ -21,14 +21,12 @@ body = response.read_body
 data = JSON.parse(body)
 
 data.each do |hash_exercise|
-  # Create Exercice instances with the correct association
+  # Create Exercice instances with the correct association+
+  p hash_exercise.keys
   Exercice.create(
     name: hash_exercise["name"],
     workout_id: workout.id, # Use workout_id instead of workout
     photo: hash_exercise["workout.jpg"],
-    time: hash_exercise["time"],
     repetition: hash_exercise["repetition"],
-    calories: hash_exercise["calories"],
-    type: hash_exercise["type"]
   )
 end
