@@ -2,9 +2,24 @@
   background-color: #0a1828;
   margin-left: auto;
   color: #fff;
+  margin: 10px 15px;
 }
 
 .form-select {
   color: white;
   background-color: #0a1828;
+  margin-right: 20px;
+}
+
+.option-image.active {
+  border: 5px solid #5b8ef1;
+  box-shadow: 0 0 10px #182131;
+}
+
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
