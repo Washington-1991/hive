@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_06_160254) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_07_135744) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,27 +38,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_160254) do
     t.index ["workout_id"], name: "index_exercices_on_workout_id"
   end
 
-  create_table "message_reactions", force: :cascade do |t|
-    t.string "icon"
-    t.bigint "user_id", null: false
-    t.bigint "message_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["message_id"], name: "index_message_reactions_on_message_id"
-    t.index ["user_id"], name: "index_message_reactions_on_user_id"
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.string "content"
-    t.string "photo"
-    t.bigint "programs_workout_id", null: false
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["programs_workout_id"], name: "index_messages_on_programs_workout_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
-  end
-
   create_table "programs", force: :cascade do |t|
     t.text "name"
     t.bigint "user_id", null: false
@@ -68,13 +47,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_160254) do
   end
 
   create_table "programs_workouts", force: :cascade do |t|
-    t.bigint "program_id"
+    t.bigint "program_id", null: false
+    t.bigint "workout_id", null: false
     t.date "date"
     t.string "feeling"
     t.boolean "completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["program_id"], name: "index_programs_workouts_on_program_id"
+    t.index ["workout_id"], name: "index_programs_workouts_on_workout_id"
   end
 
   create_table "user_weights", force: :cascade do |t|
@@ -107,11 +88,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_160254) do
 
   add_foreign_key "aptitudes", "users"
   add_foreign_key "exercices", "workouts"
-  add_foreign_key "message_reactions", "messages"
-  add_foreign_key "message_reactions", "users"
-  add_foreign_key "messages", "programs_workouts"
-  add_foreign_key "messages", "users"
   add_foreign_key "programs", "users"
   add_foreign_key "programs_workouts", "programs"
+  add_foreign_key "programs_workouts", "workouts"
   add_foreign_key "user_weights", "users"
 end
