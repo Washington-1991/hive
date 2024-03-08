@@ -1,5 +1,6 @@
 class AptitudesController < ApplicationController
 
+
   def new
     @aptitude = Aptitude.new
   end
