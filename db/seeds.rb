@@ -4,8 +4,6 @@ require 'json'
 
 puts " create user "
 
-
-# Create workout
 Exercice.destroy_all
 Workout.destroy_all
 Program.destroy_all
@@ -42,8 +40,12 @@ User.destroy_all
 # Create user
 puts 'Creating user...'
 
+
 user = User.create!(email: "user@mail.com", password: "password")
 User.create!(email: "nico@mail.com", password:"coucou")
+=======
+user = User.create!(email: "nico@mail.com", password: "coucou")
+
 
 #create program
 
