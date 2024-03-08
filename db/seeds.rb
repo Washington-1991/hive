@@ -43,7 +43,6 @@ puts 'Creating user...'
 
 user = User.create!(email: "user@mail.com", password: "password")
 User.create!(email: "nico@mail.com", password:"coucou")
-=======
 user = User.create!(email: "nico@mail.com", password: "coucou")
 
 
