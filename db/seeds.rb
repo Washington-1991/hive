@@ -11,7 +11,6 @@ Workout.destroy_all
 Program.destroy_all
 User.destroy_all
 
-
 # url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
 
 # http = Net::HTTP.new(url.host, url.port)
