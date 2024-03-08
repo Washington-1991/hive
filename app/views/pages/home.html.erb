@@ -8,7 +8,8 @@
   </div>
 
   <div class="card-home-button">
-    <button class="button-sign-in" >Sign-in</button>
+    <%= link_to "Sign-in", new_user_session_path %>
+    <%= link_to " delete", destroy_user_session_path, data: { turbo_method: :delete} %>
   </div>
 
 </div>

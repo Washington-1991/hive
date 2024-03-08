@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   resources :aptitudes, only: [:new, :create]
 
   get "/dashboard", to: "pages#dashboard"
+  get "/profile", to: "pages#profile"
+  get "/aptitudes", to: "aptitudes#new"
 
+  # resources :profile
 
   # Defines the root path route ("/")
   # root "posts#index"
