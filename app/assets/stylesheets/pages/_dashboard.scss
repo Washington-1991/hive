@@ -3,7 +3,6 @@
   margin: 25px;
 }
 
-
 .container-program {
   background-color: #182131;
   padding: 10px;
@@ -21,6 +20,20 @@
   text-align: center;
 }
 
+.navbar {
+  margin: 15px;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.fa-chart-simple {
+  font-size: 50px;
+}
+
 .container-agenda {
   background-color: #182131;
   padding: 10px;
@@ -30,6 +43,29 @@
   text-align: center;
 }
 
-.navbar {
-  margin: 15px;
+.agenda-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.fa-calendar-check {
+  font-size: 40px;
+}
+
+.fa-calendar-xmark {
+  font-size: 40px;
+}
+
+.btn-starting {
+  color: white;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(46, 145, 46);
+  width: 140px;
+  margin-left: 80px;
+
 }
