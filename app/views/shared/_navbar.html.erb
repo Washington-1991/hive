@@ -7,9 +7,11 @@
       <%=image_tag("profile.png")%>
     </div>
 
-    <div class="card-my-profile-text">
+    <%= link_to profile_path do %>
+    <div class="card-my-profile-text" >
       <p>My profile</p>
     </div>
+    <% end %>
 
   </div>
 
