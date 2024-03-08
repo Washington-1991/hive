@@ -8,7 +8,8 @@
   </div>
 
   <div class="card-home-button">
-    <button class="button-sign-in" >Sign-in</button>
+   <%= link_to "Sign up", new_user_registration_path, class:"card-home-button-sign-up" %>
+   <%= link_to "Log in", new_user_session_path, class:"card-home-button-log-in" %>
   </div>
 
 </div>

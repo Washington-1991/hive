@@ -4,7 +4,7 @@ require 'json'
 
 puts " create user "
 
-User.create!(email: "nico@mail.com", password:"coucou")
+
 # Create workout
 Exercice.destroy_all
 Workout.destroy_all
@@ -43,6 +43,7 @@ User.destroy_all
 puts 'Creating user...'
 
 user = User.create!(email: "user@mail.com", password: "password")
+User.create!(email: "nico@mail.com", password:"coucou")
 
 #create program
 
@@ -68,7 +69,6 @@ Workout.all.each do |workout|
 
   response = http.request(request)
 
-
   body = response.read_body
   data = JSON.parse(body)
   puts "creating exrecice"
@@ -85,10 +85,5 @@ Workout.all.each do |workout|
   program_workout = ProgramsWorkout.create!(program: program, workout: workout, date: Date.today + day,  completed: false)
   day = day + 2
 end
-
-
-
-
-
 
 puts "seed end"
