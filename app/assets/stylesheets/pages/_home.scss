@@ -20,10 +20,9 @@ width: 83%;
 }
 
 .card-home-information{
-color: white;
-margin-top: 110%;
-height: 20%;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-home-information p{
