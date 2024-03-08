@@ -1,7 +1,6 @@
 // here is where the container-sign-up starts
 
 .container-sign-up {
-  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,6 @@
 
 .card-sign-up-logo{
 background-image: url("hive-logo.png");
-border: 1px solid #ccc;
 background-size: cover;
 position: absolute;
 margin: 0px;
@@ -36,7 +34,6 @@ height: 10vh;
 // here is where the card-sign-up-h1 starts
 
 .card-sign-up-h1{
-  border: 1px solid #ccc;
   justify-content: center;
   width: 90%;
   margin-top: 20vh;
@@ -46,7 +43,6 @@ height: 10vh;
 // here is where the card-sign-up starts
 
 .card-form-sign-ip{
-  border: 1px solid #ccc;
   width: 95%;
 }
 
@@ -96,4 +92,8 @@ height: 10vh;
   width: 100%;
   padding: 20px;
   margin-bottom: 8vh;
+}
+
+.form-text{
+  color: white;
 }
