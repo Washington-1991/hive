@@ -21,6 +21,20 @@
   text-align: center;
 }
 
+.navbar {
+  margin: 15px;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.fa-chart-simple {
+  font-size: 50px;
+}
+
 .container-agenda {
   background-color: #182131;
   padding: 10px;
@@ -30,6 +44,16 @@
   text-align: center;
 }
 
-.navbar {
-  margin: 15px;
+.agenda-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.fa-calendar-check {
+  font-size: 40px;
+}
+
+.fa-calendar-xmark {
+  font-size: 40px;
 }
