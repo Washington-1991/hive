@@ -40,7 +40,6 @@ User.destroy_all
 #     type: hash_exercise["type"]
 #   )
 # end
-=======
 # Create user
 puts 'Creating user...'
 
