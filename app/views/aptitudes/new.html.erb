@@ -16,17 +16,17 @@
                     class:"d-none",
                     data:  {aptitude_target: "input"} %>
       <div class="carousel-inner">
-        <div class="carousel-item active" target="image">
+        <div class="carousel-item active" data-difficulty="Faible" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1603.jpg", class: "option-image", data: { difficulty: "Faible"}) %>
+          <%= image_tag("IMG_1603.jpg", class: "option-image", data: { difficulty: "Faible", aptitude_target: "difficulty"}) %>
         </div>
-        <div class="carousel-item" target="image">
+        <div class="carousel-item" data-difficulty="Moyen" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1604.jpg", class: "option-image", data: { difficulty: "Moyenne"}) %>
+          <%= image_tag("IMG_1604.jpg", class: "option-image", data: { difficulty: "Moyenne", aptitude_target: "difficulty"}) %>
         </div>
-        <div class="carousel-item" target="image">
+        <div class="carousel-item" data-difficulty="Fort" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-            <%= image_tag("IMG_1602.jpg", class: "option-image", data: { difficulty: "Forte"}) %>
+            <%= image_tag("IMG_1602.jpg", class: "option-image", data: { difficulty: "Forte", aptitude_target: "difficulty"}) %>
         </div>
       </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -55,21 +55,21 @@
 
   <div id="carouselExampleRide2" class="carousel slide d-none" data-bs-ride="false" data-aptitude-target="aptitudeTest">
       <div>
-      <%= f.text_field :shoulder,
+      <%= f.text_field :hip,
                       class:"d-none",
                       data:  {aptitude_target: "input"} %>
         <div class="carousel-inner">
-          <div class="carousel-item active" target="image">
+          <div class="carousel-item active" data-difficulty="Faible" data-aptitude-target="image">
             <%# <img src="..." class="d-block w-100" alt="..."> %>
-            <%= image_tag("IMG_1608.jpg", class: "option-image", data: { difficulty: "Faible"}) %>
+            <%= image_tag("IMG_1608.jpg", class: "option-image", data: { difficulty: "Faible", aptitude_target: "difficulty"}) %>
           </div>
-          <div class="carousel-item" target="image">
+          <div class="carousel-item" data-difficulty="Moyen" data-aptitude-target="image">
             <%# <img src="..." class="d-block w-100" alt="..."> %>
-            <%= image_tag("IMG_1609.jpg", class: "option-image", data: { difficulty: "Moyenne"}) %>
+            <%= image_tag("IMG_1609.jpg", class: "option-image", data: { difficulty: "Moyenne", aptitude_target: "difficulty"}) %>
           </div>
-          <div class="carousel-item" target="image">
+          <div class="carousel-item" data-difficulty="Fort" data-aptitude-target="image">
             <%# <img src="..." class="d-block w-100" alt="..."> %>
-              <%= image_tag("IMG_1610.jpg", class: "option-image", data: { difficulty: "Forte"}) %>
+              <%= image_tag("IMG_1610.jpg", class: "option-image", data: { difficulty: "Forte", aptitude_target: "difficulty"}) %>
           </div>
         </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="prev">
@@ -101,21 +101,21 @@
 
   <div id="carouselExampleRide3" class="carousel slide d-none" data-bs-ride="false" data-aptitude-target="aptitudeTest">
     <div>
-    <%= f.text_field :shoulder,
+    <%= f.text_field :ankle,
                     class:"d-none",
                     data:  {aptitude_target: "input"} %>
       <div class="carousel-inner">
-        <div class="carousel-item active" target="image">
+        <div class="carousel-item active" data-difficulty="Faible" data-difficulty="Faible" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1605.jpg", class: "option-image", data: { difficulty: "Faible"}) %>
+          <%= image_tag("IMG_1605.jpg", class: "option-image", data: { difficulty: "Faible", aptitude_target: "difficulty"}) %>
         </div>
-        <div class="carousel-item" target="image">
+        <div class="carousel-item" data-difficulty="Moyen" data-difficulty="Faible" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1606.jpg", class: "option-image", data: { difficulty: "Moyenne"}) %>
+          <%= image_tag("IMG_1606.jpg", class: "option-image", data: { difficulty: "Moyenne", aptitude_target: "difficulty"}) %>
         </div>
-        <div class="carousel-item" target="image">
+        <div class="carousel-item" data-difficulty="Fort" data-aptitude-target="image">
           <%# <img src="..." class="d-block w-100" alt="..."> %>
-            <%= image_tag("IMG_1607.jpg", class: "option-image", data: { difficulty: "Forte"}) %>
+            <%= image_tag("IMG_1607.jpg", class: "option-image", data: { difficulty: "Forte", aptitude_target: "difficulty"}) %>
         </div>
       </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide3" data-bs-slide="prev">
