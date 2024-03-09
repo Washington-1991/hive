@@ -1,8 +1,13 @@
 .aptitude {
   background-color: #0a1828;
-  margin-left: auto;
+  // margin-left: auto;
   color: #fff;
-  margin: 10px 15px;
+  // margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .form-select {
@@ -21,5 +26,36 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+}
+
+.next-link {
+  margin-top: 15px;
+  text-decoration: none !important;
+  color: white;
+  background-color: #182449;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.next-link:hover {
+  cursor: pointer;
+  //   color: #253974;
+  background-color: #3a4f97;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.info-apt {
+  width: 300px;
+}
+.advice {
+  font-style: 12px;
+}
+
+.krousel {
   width: 100%;
 }

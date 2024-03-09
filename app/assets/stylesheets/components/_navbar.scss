@@ -1,7 +1,7 @@
 // navbar-container start
 
 .navbar-container {
-  background-color: #0A1828;
+  background-color: #0a1828;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -15,7 +15,7 @@
 
 // card-my-profile start
 
-.card-my-profile{
+.card-my-profile {
   display: flex;
   color: white;
   flex-direction: column;
@@ -26,20 +26,17 @@
   height: 100%;
 }
 
-.card-my-profile-button button{
-margin: 1vh;
-height: 4vh;
-width: 4vh;
+.card-my-profile-button button {
+  margin: 1vh;
+  height: 4vh;
+  width: 4vh;
 }
 
-.card-my-profile-text {
-
-}
 // card-my-profile end
 
 // card-community start
 
-.card-community{
+.card-community {
   display: flex;
   color: white;
   flex-direction: column;
@@ -47,14 +44,13 @@ width: 4vh;
   justify-content: center;
   width: 30%;
   height: 100%;
-
 }
 
 // card-community end
 
 // card-options start
 
-.card-menu{
+.card-menu {
   display: flex;
   color: white;
   flex-direction: column;
@@ -62,6 +58,5 @@ width: 4vh;
   justify-content: center;
   width: 30%;
   height: 100%;
-
 }
 // card-options end

@@ -1,45 +1,50 @@
-<div class="aptitude" >
+<%= render "shared/topbar" %>
+<div class="container aptitude" >
+  <div class="info-apt">
+    <h1 class="title"> Test de Mobilité  </h1>
+      <hr>
+    <%# <h2> Bienvenue dans votre test de mobilité ! </h2> %>
 
-  <h1 class="title"> Test de Mobilité  </h1>
-
-  <h2> Bienvenue dans votre test de mobilité ! </h2>
-
-  <p> Durée moyenne : 12 min </p>
-  <p> Testez vous au moins 2 heures après le lever </p>
-  <p> Évitez de vous tester juste après un entraînement </p>
-
-<%= form_for @aptitude, data: { controller: "aptitude" } do |f| %>
-  <%# ------------ CAROUSSEL 1 ------------- %>
-  <div id="carouselExampleRide" class="carousel slide " data-bs-ride="false" data-aptitude-target="aptitudeTest" >
-    <div>
-    <%= f.text_field :shoulder,
-                    class:"d-none",
-                    data:  {aptitude_target: "input"} %>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-difficulty="Faible" data-aptitude-target="image">
-          <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1603.jpg", class: "option-image", data: { difficulty: "Faible", aptitude_target: "difficulty"}) %>
-        </div>
-        <div class="carousel-item" data-difficulty="Moyen" data-aptitude-target="image">
-          <%# <img src="..." class="d-block w-100" alt="..."> %>
-          <%= image_tag("IMG_1604.jpg", class: "option-image", data: { difficulty: "Moyenne", aptitude_target: "difficulty"}) %>
-        </div>
-        <div class="carousel-item" data-difficulty="Fort" data-aptitude-target="image">
-          <%# <img src="..." class="d-block w-100" alt="..."> %>
-            <%= image_tag("IMG_1602.jpg", class: "option-image", data: { difficulty: "Forte", aptitude_target: "difficulty"}) %>
-        </div>
-      </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
+    <p> <em>Durée moyenne</em> : 12 min </p>
+    <p> Testez vous au moins 2 heures après le lever </p>
+    <p class="advice"><em> Évitez de vous tester juste après un entraînement </em></p>
+    <hr>
   </div>
 
+  <%# --------------- Caroussel ---------------- %>
+  <div class="krousel">
+    <%= form_for @aptitude, data: { controller: "aptitude" } do |f| %>
+      <%# ------------ CAROUSSEL 1 ------------- %>
+      <div id="carouselExampleRide" class="carousel slide " data-bs-ride="false" data-aptitude-target="aptitudeTest" >
+        <div>
+        <%= f.text_field :shoulder,
+                        class:"d-none",
+                        data:  {aptitude_target: "input"} %>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-difficulty="Faible" data-aptitude-target="image">
+              <%# <img src="..." class="d-block w-100" alt="..."> %>
+              <%= image_tag("IMG_1603.jpg", class: "option-image", data: { difficulty: "Faible", aptitude_target: "difficulty"}) %>
+            </div>
+            <div class="carousel-item" data-difficulty="Moyen" data-aptitude-target="image">
+              <%# <img src="..." class="d-block w-100" alt="..."> %>
+              <%= image_tag("IMG_1604.jpg", class: "option-image", data: { difficulty: "Moyenne", aptitude_target: "difficulty"}) %>
+            </div>
+            <div class="carousel-item" data-difficulty="Fort" data-aptitude-target="image">
+              <%# <img src="..." class="d-block w-100" alt="..."> %>
+                <%= image_tag("IMG_1602.jpg", class: "option-image", data: { difficulty: "Forte", aptitude_target: "difficulty"}) %>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+      </div>
+  
 
     <%# <div>
       <%= f.text_field :shoulder,
@@ -82,9 +87,6 @@
       </button>
       </div>
     </div>
-
-
-
 
     <%# <div>
       <%= f.text_field :hip,
@@ -129,9 +131,7 @@
     </div>
   </div>
 
-
-
-    <div data-action="click->aptitude#nextTest">Next Question</div>
+    <div data-action="click->aptitude#nextTest" class="next-link">Next Question <i class="fa-solid fa-arrow-right"></i></div>
     <%# <div>
       <%= f.text_field :ankle,
                   class:"d-none",
@@ -139,14 +139,6 @@
       <%# <%= image_tag("IMG_1605.jpg", class: "option-image", data: { difficulty: "Faible"}) %>
       <%# <%= image_tag("IMG_1606.jpg", class: "option-image", data: { difficulty: "Moyenne"}) %>
       <%# <%= image_tag("IMG_1607.jpg", class: "option-image", data: { difficulty: "Forte"}) %>
-
-
-
   <% end %>
-
-
-
-
-
-
+  </div>
 </div>
