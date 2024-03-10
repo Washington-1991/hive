@@ -23,9 +23,10 @@
   <!--mettre le nom du programs_workout + la durée du programme-->
 
   <div>
-  <button class="btn-starting">ALLONS-Y</button>
-  <!--ajouter lien de redirection vers program-->
-  </div>
+  <%= link_to programs_path, class: "btn-starting" do %>
+    <button>ALLONS-Y</button>
+  <% end %>
+</div>
 </div>
 
 
