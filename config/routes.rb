@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/dashboard", to: "pages#dashboard"
   get "/profile", to: "pages#profile"
   get "/aptitudes", to: "aptitudes#new"
+  get 'aboutus', to: 'pages#aboutus'
 
   # resources :profile
 
