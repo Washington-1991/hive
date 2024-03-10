@@ -1,46 +1,61 @@
-<div class="navbar-container">
-
-  <div class="card-my-profile">
-    <%# here is where you have to put the link %>
-    <div class="card-my-profile-container">
-
-      <%=image_tag("profile.png")%>
+<div class="navbar-bot">
+  <div class="navbar-container">
+    <div class="card-my-profile">
+      <%# here is where you have to put the link %>
+      <%= link_to profile_path do %>
+      <div class="card-my-profile-text" >
+        <i class="fa-regular fa-user"></i>
+        <span>Profile</span>  
+      </div>
+      <% end %>
     </div>
 
-    <%= link_to profile_path do %>
-    <div class="card-my-profile-text" >
-      <p>My profile</p>
+    <div class="card-my-profile">
+      <%# here is where you have to put the link %>
+      <%= link_to profile_path do %>
+      <div class="card-my-profile-text" >
+        <i class="fa-solid fa-users"></i>
+        <span>Community</span>  
+      </div>
+      <% end %>
     </div>
-    <% end %>
+
+    <div class="card-my-profile">
+      <%# here is where you have to put the link %>
+      <%= link_to profile_path do %>
+      <div class="card-my-profile-text" >
+        <i class="fa-solid fa-bars"></i>
+        <span>Menu</span>  
+      </div>
+      <% end %>
+    </div>
+
+    <%# <div class="card-community">
+      <div class="card-community-container">
+      <%# here is where you have to put the link %>
+      <%# <%=image_tag("community.png")%> 
+      <%# </div> %>
+
+      <%# <div class="card-community-text"> %>
+        <%# <p>Community</p> %>
+      <%# </div> %>
+
+    <%# </div> %>
+
+    <%# <div class="card-menu">
+
+      <div class="card-menu-container">
+      <%# here is where you have to put the link %>
+        <%# <%=image_tag("menu.png")%> 
+      <%# </div> %>
+
+      <%# <div class="card-menu-text"> %>
+        <%# <p>Menu</p> %>
+      <%# </div> %>
+
+    <%# </div> %>
 
   </div>
-
-  <div class="card-community">
-
-    <div class="card-community-container">
-    <%# here is where you have to put the link %>
-     <%=image_tag("community.png")%>
-    </div>
-
-    <div class="card-community-text">
-      <p>Community</p>
-    </div>
-
-  </div>
-
-  <div class="card-menu">
-
-    <div class="card-menu-container">
-    <%# here is where you have to put the link %>
-      <%=image_tag("menu.png")%>
-    </div>
-
-    <div class="card-menu-text">
-      <p>Menu</p>
-    </div>
-
-  </div>
-
 </div>
 
 

@@ -30,10 +30,12 @@
 }
 
 .next-link {
-  margin-top: 15px;
+  display: inline-block;
+  width: 188px;
+  margin: 15px auto 0 auto;
   text-decoration: none !important;
   color: white;
-  background-color: #182449;
+  background-color: #647bc2;
   padding: 15px;
   border-radius: 20px;
 }
