@@ -1,62 +1,43 @@
 <div class="navbar-bot">
-  <div class="navbar-container">
-    <div class="card-my-profile">
-      <%# here is where you have to put the link %>
-      <%= link_to profile_path do %>
-      <div class="card-my-profile-text" >
-        <i class="fa-regular fa-user"></i>
-        <span>Profile</span>  
-      </div>
-      <% end %>
+
+  <div class="card-dashboard">
+    <div class="button-action">
+      <button class="button-dashboard">
+      <a href=""><i class="fa-solid fa-chart-line"></i></a>
+      </button>
     </div>
-
-    <div class="card-my-profile">
-      <%# here is where you have to put the link %>
-      <%= link_to profile_path do %>
-      <div class="card-my-profile-text" >
-        <i class="fa-solid fa-users"></i>
-        <span>Community</span>  
-      </div>
-      <% end %>
+    <div class="paragraph">
+      <p>Dashboard</p>
     </div>
+  </div>
 
-    <div class="card-my-profile">
-      <%# here is where you have to put the link %>
-      <%= link_to profile_path do %>
-      <div class="card-my-profile-text" >
-        <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>  
-      </div>
-      <% end %>
+  <div class="card-community">
+    <div class="button-action">
+      <button class="button-community">
+      <a href=""><i class="fa-solid fa-users"></i></a>
+      </button>
     </div>
+    <div class="paragraph">
+      <p>Community</p>
+    </div>
+  </div>
 
-    <%# <div class="card-community">
-      <div class="card-community-container">
-      <%# here is where you have to put the link %>
-      <%# <%=image_tag("community.png")%> 
-      <%# </div> %>
+  <div class="dropup-center">
+    <div class="button-action">
+        <button class="button-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profil</a></li>
+          <li><a class="dropdown-item" href="#">Exercises</a></li>
+          <li><a class="dropdown-item" href="#">A propos de Hive</a></li>
+          <li><a class="dropdown-item" href="#">Parametres</a></li>
+        </div>
 
-      <%# <div class="card-community-text"> %>
-        <%# <p>Community</p> %>
-      <%# </div> %>
+        <div class="paragraph">
+          <p>Options</p>
+        </div>
 
-    <%# </div> %>
-
-    <%# <div class="card-menu">
-
-      <div class="card-menu-container">
-      <%# here is where you have to put the link %>
-        <%# <%=image_tag("menu.png")%> 
-      <%# </div> %>
-
-      <%# <div class="card-menu-text"> %>
-        <%# <p>Menu</p> %>
-      <%# </div> %>
-
-    <%# </div> %>
-
+    </div>
   </div>
 </div>
-
-
-<%# <%= render 'shared/navbar' %>

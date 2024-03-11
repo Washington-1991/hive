@@ -1,88 +1,79 @@
-.card-my-profile-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+// navbar-bot starts
+.navbar-bot{
+display: flex;
+justify-content: space-between;
+position: sticky;
+bottom: 0;
+height: 10vh;
+width: 100%;
+border-top: 1px solid #e0e0e0;
+}
+// navbar-bot ends
+
+// card-dashboard starts
+.card-dashboard{
+  justify-content: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 30%;
 }
 
-.navbar-bot {
-  position: relative;
-  bottom: -24px;
-  border-top: grey 1px solid;
-  padding-top: 16px;
+
+.button-dashboard{
+  background-color: transparent;
+  border: #0a1828;
+  font-size: 32px;
+  margin-top: 8px;
+  margin: 0px;
+  color: #0d6efd;
+  padding: 0px;
+  margin-left: 32px;
+}
+// card-dashboard ends
+
+
+// card-community starts
+.card-community{
+justify-content: center;
+justify-content: space-between;
+padding: 8px;
+width: 30%;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.button-community{
+  background-color: transparent;
+  border: #0a1828;
+  font-size: 32px;
+  margin-top: 8px;
+  margin: 0px;
+  color: #0d6efd;
+  padding: 0px;
+  margin-left: 32px;
+}
+// card-community ends
+
+
+// dropup-center dropup starts
+.dropup-center {
+  justify-content: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 30%;
 }
 
-.card-my-profile > a {
-  color: white;
-  text-decoration: none;
+.button-menu{
+  background-color: transparent;
+  border: #0a1828;
+  font-size: 32px;
+  margin-top: 8px;
+  margin: 0px;
+  color: #0d6efd;
+  padding: 0px;
+  margin-left: 32px;
 }
 
-.card-my-profile-text > i {
-  margin-bottom: 5px;
-  font-size: 20px;
+.paragraph{
+    margin-left: 16px;
+    color: #0d6efd;
 }
-
-// ------ old version --------------
-
-// .navbar-container {
-//   background-color: #0a1828;
-//   display: flex;
-//   justify-content: space-between;
-//   position: sticky;
-//   bottom: 0;
-//   position: fixed;
-//   bottom: 0;
-//   height: 10vh;
-//   width: 100%;
-// }
-
-// .card-my-profile {
-//   display: flex;
-//   color: white;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   justify-content: space-between;
-//   width: 30%;
-//   height: 100%;
-// }
-
-// .card-my-profile-button button {
-//   margin: 1vh;
-//   height: 4vh;
-//   width: 4vh;
-// }
-
-// // card-my-profile end
-
-// // card-community start
-
-// .card-community {
-//   display: flex;
-//   color: white;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   width: 30%;
-//   height: 100%;
-// }
-
-// // card-community end
-
-// // card-options start
-
-// .card-menu {
-//   display: flex;
-//   color: white;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   width: 30%;
-//   height: 100%;
-// }
-// // card-options end
+// dropup-center dropup ends
