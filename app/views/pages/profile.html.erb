@@ -1,18 +1,13 @@
 
- <%# here is where profile-container starts  %>
-  <div class="profile-container">
+  <%# <%= render 'shared/topbar' %> 
 
-    <div class="profile-card-h1">
-      <h1> Hello <%= current_user.email %>  </h1>
+  <div class="container info-session text-center mt-5">
+    <div class="logo">
+      <%= image_tag("hive-logo", class:"big-logo") %>
     </div>
-
-    <div class="profile-card-h2">
-      <h2> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</h2>
-    </div>
-
+    <h2> Hello <%= current_user.email %>  </h2>
+    <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
+  <div class="apt-link" >
+    <%= link_to "Test d'aptitude", aptitudes_path  %>
   </div>
-
-    <div class="profile-card-test">
-      <%= link_to "Test d'aptitude", aptitudes_path  %>
-    </div>
-  <%# here is where profile-container ends %>
+  </div>

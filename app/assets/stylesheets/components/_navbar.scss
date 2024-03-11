@@ -1,67 +1,88 @@
-// navbar-container start
+.card-my-profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-bot {
+  position: relative;
+  bottom: -24px;
+  border-top: grey 1px solid;
+  padding-top: 16px;
+}
 
 .navbar-container {
-  background-color: #0A1828;
   display: flex;
-  justify-content: space-between;
-  position: sticky;
-  bottom: 0;
-  position: fixed;
-  bottom: 0;
-  height: 10vh;
-  width: 100%;
-}
-// navbar-container end
-
-// card-my-profile start
-
-.card-my-profile{
-  display: flex;
-  color: white;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  width: 30%;
-  height: 100%;
 }
 
-.card-my-profile-button button{
-margin: 1vh;
-height: 4vh;
-width: 4vh;
-}
-
-.card-my-profile-text {
-
-}
-// card-my-profile end
-
-// card-community start
-
-.card-community{
-  display: flex;
+.card-my-profile > a {
   color: white;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 100%;
-
+  text-decoration: none;
 }
 
-// card-community end
-
-// card-options start
-
-.card-menu{
-  display: flex;
-  color: white;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 100%;
-
+.card-my-profile-text > i {
+  margin-bottom: 5px;
+  font-size: 20px;
 }
-// card-options end
+
+// ------ old version --------------
+
+// .navbar-container {
+//   background-color: #0a1828;
+//   display: flex;
+//   justify-content: space-between;
+//   position: sticky;
+//   bottom: 0;
+//   position: fixed;
+//   bottom: 0;
+//   height: 10vh;
+//   width: 100%;
+// }
+
+// .card-my-profile {
+//   display: flex;
+//   color: white;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   justify-content: space-between;
+//   width: 30%;
+//   height: 100%;
+// }
+
+// .card-my-profile-button button {
+//   margin: 1vh;
+//   height: 4vh;
+//   width: 4vh;
+// }
+
+// // card-my-profile end
+
+// // card-community start
+
+// .card-community {
+//   display: flex;
+//   color: white;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   width: 30%;
+//   height: 100%;
+// }
+
+// // card-community end
+
+// // card-options start
+
+// .card-menu {
+//   display: flex;
+//   color: white;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   width: 30%;
+//   height: 100%;
+// }
+// // card-options end

@@ -1,0 +1,52 @@
+.logo-nav {
+  // width: 120px;
+  height: 72px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  /* height: 303px; */
+  margin-top: 50px;
+}
+
+.navbar.navbar-lewagon {
+  height: 64px;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: solid 0.5px grey;
+}
+
+.navbar-toggler {
+  color: white;
+  font-size: 24px;
+}
+
+.info-session {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+}
+
+.apt-link {
+  margin-top: 15px;
+}
+
+.apt-link > a {
+  text-decoration: none !important;
+  color: white;
+  background-color: #647bc2;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.apt-link > a:hover {
+  cursor: pointer;
+  //   color: #253974;
+  background-color: #3a4f97;
+}
+
+.nav-link {
+  color: white;
+}
