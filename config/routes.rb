@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "/profile", to: "pages#profile"
   get "/aptitudes", to: "aptitudes#new"
   get 'aboutus', to: 'pages#aboutus'
+  get '/progress', to: 'pages#progress'
 
   resources :programs do
     resources :workouts, only: [:new, :create]
