@@ -1,14 +1,16 @@
 // here is where the topbar-container starts
 .topbar-container {
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  margin-top: 0px;
-  display: flex;
-  height: 10vh;
-  width: 100%;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 8px;
+  background-color: #0a1828;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px;
+    z-index: 5;
 }
 // here is where the topbar-container ends
 
