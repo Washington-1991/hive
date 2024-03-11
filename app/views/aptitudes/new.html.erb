@@ -1,4 +1,28 @@
-<%= render "shared/topbar" %>
+<%# here is where starts the topbar-container %>
+<div class="topbar-container">
+
+  <%# topbar-avatar starts %>
+  <div class="topbar-avatar">
+  <%= image_tag  "cristian.jpg"%>
+  </div>
+  <%# topbar-avatar ends %>
+
+
+  <div class="topbar-information">
+  <%# <%= "welcome" @user.name%>
+  <%# <%= date.today %>
+  </div>
+
+  <div class="topbar-logo">
+    <%= image_tag  "hive-logo.png"%>
+  </div>
+
+
+
+</div>
+<%# here is where starts the topbar-container %>
+
+
 <div class="container aptitude" >
   <div class="info-apt">
     <div class="info-apt-title">
@@ -47,7 +71,7 @@
         </button>
         </div>
       </div>
-  
+
 
     <%# <div>
       <%= f.text_field :shoulder,
