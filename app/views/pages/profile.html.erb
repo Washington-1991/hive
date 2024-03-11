@@ -1,11 +1,11 @@
 
-  <%# <%= render 'shared/topbar' %> 
+  <%# <%= render 'shared/topbar' %>
 
   <div class="container info-session text-center mt-5">
     <div class="logo">
       <%= image_tag("hive-logo", class:"big-logo") %>
     </div>
-    <h2> Hello <%= current_user.email %>  </h2>
+    <h2> Hello <%= current_user.nickname.capitalize %>  </h2>
     <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
   <div class="apt-link" >
     <%= link_to "Test d'aptitude", aptitudes_path  %>
