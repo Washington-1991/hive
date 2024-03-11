@@ -75,9 +75,9 @@ Workout.all.each do |workout|
   data = JSON.parse(body)
   puts "creating exrecice"
   data.each do |hash_exercise|
-    p hash_exercise.class
+    #p hash_exercise.class
     # Create Exercice instances with the correct association+
-    Exercice.create!(
+    exo = Exercice.create!(
       name: hash_exercise["name"],
       workout: workout, # Use workout_id instead of workout
       photo: hash_exercise["gifUrl"]
