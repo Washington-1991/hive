@@ -76,7 +76,7 @@ Workout.all.each do |workout|
   puts "creating exrecice"
   data.each do |hash_exercise|
     # Create Exercice instances with the correct association+
-    Exercice.create!(
+    exo = Exercice.create!(
       name: hash_exercise["name"],
       workout: workout, # Use workout_id instead of workout
       photo: hash_exercise["gifUrl"]
