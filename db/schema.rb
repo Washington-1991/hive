@@ -38,11 +38,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_11_083131) do
     t.index ["workout_id"], name: "index_exercices_on_workout_id"
   end
 
-  create_table "profiles", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "programs", force: :cascade do |t|
     t.text "name"
     t.bigint "user_id", null: false

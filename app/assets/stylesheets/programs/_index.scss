@@ -1,0 +1,76 @@
+.container-program {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #182131;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  }
+
+.bloc-exercice {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: black;
+
+  }
+
+.button-check {
+    background-color: rgb(73, 195, 73);
+    border-radius: 10px;
+
+  }
+
+.organized-bloc {
+  display: flex;
+  justify-content: space-between;
+
+  }
+
+
+  .btn-gradient {
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: linear-gradient(#167FFB, #0F60C4);
+    transition: background 0.3s ease;
+    border: 1px solid #0F60C4;
+  }
+
+  .btn-gradient:hover {
+    background: linear-gradient(#147EFF, #0F67DA);
+    color: grey;
+  }
+
+.display-pictures {
+  display: flex;
+  justify-content: space-between;
+
+  }
+
+img {
+  height: 100px;
+  width: 110px;
+  border-radius: 10px;
+
+}
+
+.align-details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+
+}
+
+progress {
+  width: 350px;
+  height: 50px;
+}
