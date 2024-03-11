@@ -45,6 +45,12 @@ puts 'Creating user...'
 
 user = User.create!(email: "user@mail.com", password: "password", nickname: "arthur", photo_url:("https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"))
 User.create!(email: "nico@mail.com", password:"coucou", nickname: "nico", photo_url:("https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") )
+user_weights = UserWeight.create!(user: user, weight: 120.0, created_at: Date.today - 91, updated_at: Date.today - 91)
+user_weights = UserWeight.create!(user: user, weight: 100.0, created_at: Date.today - 61, updated_at: Date.today - 61)
+user_weights = UserWeight.create!(user: user, weight: 90.0, created_at: Date.today - 31, updated_at: Date.today - 31)
+user_weights = UserWeight.create!(user: user, weight: 85.0, created_at: Date.today - 2, updated_at: Date.today - 2)
+user_weights = UserWeight.create!(user: user, weight: 80.0, created_at: Date.today - 1, updated_at: Date.today - 1)
+
 
 
 #create program
