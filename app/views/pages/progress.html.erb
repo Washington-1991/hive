@@ -1,12 +1,17 @@
 <%= render "/shared/topbar" %>
-
 <%= link_to dashboard_path do%>
-
 <i class="fa-solid fa-arrow-left"></i>
-<% end %>
 
-<div class="container mt-4">
-<h1> Suivre ma progression  </h1>
+<div class="container-progress">
+
+
+  <% end %>
+
+  <div class="container mt-4">
+  <h1> Suivre ma progression  </h1>
+  </div>
+
+  <%= column_chart current_user.get_weights %>
+
 </div>
-
- <%= column_chart current_user.get_weights %>
+ <%= render "shared/navbar" %>
