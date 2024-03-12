@@ -16,14 +16,16 @@
 @import "pages/profile";
 @import "programs/index";
 @import "pages/progress";
+@import "pages/messages";
 
 body {
   background-color: #0a1828;
   color: white;
-  height: calc(100vh - 10vh);
-  width: 100%;
+
+
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }

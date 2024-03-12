@@ -64,7 +64,7 @@ workout_legs = Workout.create(name: "upper%20legs", photo: "workout.jpg", descri
 
 # day = 1
 workout_echauffement = Workout.create(name: "echauffement", photo: "workout.jpg", description: "descriptiotion")
-
+workout_exercise = Workout.create(name: "echauffement", photo: "workout.jpg", description: "descriptiotion")
 
 # Workout.all.each do |workout|
 #   url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/#{workout.name}")
@@ -106,3 +106,4 @@ exercise = Exercice.create(name: "Cuadriceps", photo: "/app/assets/images/workou
 exercise = Exercice.create(name: "Adducteurs", photo: "/app/assets/images/workout/adducteurs.jpg", time: 15, repetition: 45, calories: 40, category: "Jambes", description: "Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination", workout: workout_echauffement)
 exercise = Exercice.create(name: "Trapèze", photo: "/app/assets/images/workout/trapeze.jpg", time: 15, repetition: 45, calories: 25, category: "Dos", description: "Des tractions, des rotations et des positions de suspension pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination", workout: workout_echauffement)
 exercise = Exercice.create(name: "Pectoraux", photo: "/app/assets/images/workout/pecs.jpg", time: 15, repetition: 40, calories: 30, category: "Pecs", description: "Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut. Cela cible les muscles pectoraux, les épaules et les triceps", workout: workout_echauffement)
+

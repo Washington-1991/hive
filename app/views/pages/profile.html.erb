@@ -1,13 +1,25 @@
 
   <%# <%= render 'shared/topbar' %>
 
-  <div class="container info-session text-center mt-5">
-    <div class="logo">
-      <%= image_tag("hive-logo", class:"big-logo") %>
-    </div>
+<div class="profile-container">
+
+  <div class="profile-card-logo">
+    <%= image_tag  "hive-logo.png", width: "300px"%>
+  </div>
+
+
+
+
+  <div class="profile-card-info info-session text-center mt-5">
+
     <h2> Hello <%= current_user.nickname.capitalize %>  </h2>
     <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
-    <div class="apt-link" >
+
+
+  </div>
+
+</div>
+
+    <div class="profile-card-button-test" >
       <%= link_to "Test d'aptitude", aptitudes_path  %>
     </div>
-  </div>
