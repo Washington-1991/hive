@@ -14,12 +14,15 @@ Rails.application.routes.draw do
   get 'aboutus', to: 'pages#aboutus'
   get '/progress', to: 'pages#progress'
   get '/advice', to: 'pages#advice'
+  get '/message', to: 'pages#message'
 
   resources :programs do
     resources :workouts, only: [:new, :create]
   end
 
   resources :user_weights, only: [:create]
+
+  resources :messages, only: [:new, :create, :index]
 
   # resources :profile
 

@@ -1,0 +1,11 @@
+<div class="container mt-4">
+<h1> Montre à tout le monde ce que tu as fait</h1>
+
+<%=simple_form_for @message do |f|%>
+
+  <%=f.input :content%>
+  <%= f.input :photo, as: :file %>
+  <%=f.submit%>
+<%end%>
+
+</div>
