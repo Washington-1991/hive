@@ -4,7 +4,7 @@
 <%=simple_form_for @message do |f|%>
 
   <%=f.input :content%>
-  <%=f.input :photo, as: :file%>
+  <%= f.input :photo, as: :file %>
   <%=f.submit%>
 <%end%>
 

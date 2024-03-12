@@ -1,5 +1,11 @@
 class MessagesController < ApplicationController
 
+  def index
+    @messages = Message.all
+    @message = Message.new
+
+  end
+
   def new
     @message = Message.new
   end
@@ -8,7 +14,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     @message.user = current_user
     if @message.save
-      redirect_to message_path
+      redirect_to messages_path
     else
       render :new
     end
@@ -17,6 +23,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:content)
+    params.require(:message).permit(:content, :photo)
   end
 end

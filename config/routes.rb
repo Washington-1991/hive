@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   resources :user_weights, only: [:create]
 
-  resources :messages, only: [:new, :create]
+  resources :messages, only: [:new, :create, :index]
 
   # resources :profile
 
