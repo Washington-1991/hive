@@ -1,7 +1,7 @@
 // this is where aboutus-container start
 .aboutus-container{
-margin: 8px;
-padding: 8px;
+  margin: 0px;
+  padding: 16px;
 }
 // this is where aboutus-container end
 
@@ -15,6 +15,7 @@ padding: 8px;
 // this is where aboutus-card-presentation-carrousel starts
 .aboutus-card-presentation-carrousel{
   background-color: #182131;
+  border: 1px solid #0d6efd;
   border-radius: 15px;
   padding: 8px;
 }
@@ -41,6 +42,7 @@ padding: 8px;
 
 // this is where aboutus-card-information starts
 .aboutus-card-information{
+  border: 1px solid #0d6efd;
   background-color: #182131;
   border-radius: 15px;
   padding: 8px;
@@ -57,6 +59,7 @@ padding: 8px;
 
 // this is where aboutus-card-philosophy starts
 .aboutus-card-philosophy{
+  border: 1px solid #0d6efd;
   background-color: #182131;
   border-radius: 15px;
   padding: 16px;
@@ -67,5 +70,7 @@ padding: 8px;
 // this is where aboutus-card-philosophy img starts
 .aboutus-card-philosophy img{
   border-radius: 15px;
+  height: 300px;
+  width: 300px;
 }
 // this is where aboutus-card-philosophy img ends
