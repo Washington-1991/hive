@@ -2,6 +2,7 @@
 <%= link_to dashboard_path do%>
 <i class="fa-solid fa-arrow-left"></i>
 
+
 <div class="container-progress">
 
 
@@ -10,12 +11,15 @@
 
   <% end %>
 
-  <div class="container mt-4">
-  <h1> Suivre ma progression  </h1>
-  </div>
 
-  <%= column_chart current_user.get_weights %>
 
 </div>
- <%= render "shared/navbar" %>
 
+<div class="container mt-4">
+ <%= simple_form_for @user_weights do |f| %>
+    <%= f.number_field :weight %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+ <%= render "shared/navbar" %>
