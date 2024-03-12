@@ -1,3 +1,4 @@
+<%= render "/shared/topbar" %>
 
 <h4><b>MON PROGRAMME</b></h4>
 
@@ -20,8 +21,7 @@
         </div>
 
       <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-      <div class="détails-exercices d-none" data-details-target="detail">
-
+      <div class="details-exercices d-none" data-details-target="detail">
 
         <!--Adapter avec les photos des exercices-->
         <div class="display-pictures" >
@@ -36,10 +36,7 @@
 
       </div>
 
-
   </div>
-
-
 
 
   <div class="bloc-exercice">
@@ -60,7 +57,7 @@
 
 
       <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-      <div class="détails-exercices d-none" data-details-target="detail">
+      <div class="details-exercices d-none" data-details-target="detail">
 
 
       <!--Adapter avec les photos des exercices-->
@@ -94,7 +91,7 @@
       <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
 
 
-      <div class="détails-exercices d-none" data-details-target="detail">
+      <div class="details-exercices d-none" data-details-target="detail">
 
         <!--Adapter avec les photos des exercices-->
         <div class="display-pictures">
@@ -128,9 +125,9 @@
       <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
 
 
-      <div class="détails-exercices d-none" data-details-target="detail">
+      <div class="details-exercices d-none" data-details-target="detail">
 
-      <div class="détails-exercices">
+      <div class="details-exercices">
 
       <!--Adapter avec les photos des exercices-->
         <div class="display-pictures">
@@ -155,3 +152,5 @@
   <label for="file">File progress:</label>
   <progress id="file" max="100" value="70">70%</progress>
 </div>
+
+<%= render "/shared/navbar" %>
