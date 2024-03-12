@@ -79,6 +79,7 @@ Workout.all.each do |workout|
 
   body = response.read_body
   data = JSON.parse(body)
+  p data
   puts "creating exrecice"
   data.each do |hash_exercise|
     # Create Exercice instances with the correct association+

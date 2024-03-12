@@ -1,15 +1,18 @@
 <%= render "/shared/topbar" %>
 
-<h4><b>MON PROGRAMME</b></h4>
-
 <%= link_to dashboard_path do%>
 
 <i class="fa-solid fa-arrow-left"></i>
 <% end %>
 
+<h4><b>MON PROGRAMME</b></h4>
+
 <div class="container-program" data-controller="details">
   <h5><b>Mes exercices quotidiens</b></h5>
 
+  <% Exercice.all.each do |exercice| %>
+    <%= render "exercice", exercice: exercice %>
+  <% end %>
   <div class="bloc-exercice">
 
     <div class="organized-bloc">
@@ -151,11 +154,6 @@
 
 </div>
 
-<div class="container-program">
-  <h5><strong>Ma progression quotidienne</strong></h5>
-
-  <label for="file">File progress:</label>
-  <progress id="file" max="100" value="70">70%</progress>
-</div>
+<button class="checkpoint-button">Je valide mes exercices</button>
 
 <%= render "/shared/navbar" %>
