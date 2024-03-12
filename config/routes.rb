@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     resources :workouts, only: [:new, :create]
   end
 
+  resources :user_weights, only: [:create]
+
   # resources :profile
 
   # Defines the root path route ("/")
