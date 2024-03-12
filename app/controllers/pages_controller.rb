@@ -20,4 +20,7 @@ class PagesController < ApplicationController
   def advice
   end
 
+  def message
+  end
+
 end
