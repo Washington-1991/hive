@@ -24,6 +24,10 @@ width: 83%;
   flex-direction: column;
   align-items: center;
 }
+.card-home-information img{
+  width: 300px;
+  height: 300px;
+}
 
 .card-home-information p{
   font-size: 24px;
@@ -70,13 +74,21 @@ width: 83%;
 }
 
 .card-home-button-log-in{
+  margin: auto;
+  justify-content: center;
   color: white;
   font-size: 24px;
-  background-color: green;
+  background-color: #0d6efd;
   padding: 20px;
-  border: 1px solid green;
-  border-radius: 15px;
+  border: 2px solid #0d6efd;
+  border-radius: 40px;
   height: 10vh;
   width: 16vh;
   margin: 0vh;
+}
+
+.card-home-button a{
+  justify-content: center;
+  margin: auto;
+  padding-left: 24px;
 }
