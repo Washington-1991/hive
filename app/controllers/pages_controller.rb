@@ -17,4 +17,7 @@ class PagesController < ApplicationController
     @user_weights = UserWeight.new
   end
 
+  def advice
+  end
+
 end
