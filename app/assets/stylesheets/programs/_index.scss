@@ -18,24 +18,20 @@
 
   }
 
-.button-check {
-    background-color: rgb(73, 195, 73);
-    border-radius: 10px;
-
-  }
 
 .organized-bloc {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 
   }
 
   .btn-gradient {
     color: white;
     padding: 8px 24px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-weight: bold;
-    background: linear-gradient(#167FFB, #0F60C4);
+    background-color: #3a4f97;
     transition: background 0.3s ease;
     border: 1px solid #0F60C4;
   }
