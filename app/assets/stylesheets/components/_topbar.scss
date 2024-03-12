@@ -6,10 +6,9 @@
     top: 0;
     margin-top: 0px;
     display: flex;
-    height: 10vh;
+    height: 8vh;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 8px;
+    border-bottom: 1px solid #0d6efd;
     z-index: 5;
 }
 // here is where the topbar-container ends
@@ -17,9 +16,11 @@
 // topbar-avatar
 .topbar-avatar {
   width: 10%;
+  margin: 4px;
 }
 
 .topbar-avatar img {
+  border: 1px solid #0d6efd;
   width: 7vh;
   height: 7vh;
   border-radius: 50%;
@@ -39,12 +40,12 @@
 // topbar-logo
 .topbar-logo{
   justify-content: flex-end;
-  width: 8vh;
+  width: 10vh;
 }
 
 .topbar-logo img {
-  width: 9vh;
-  height: 9vh;
+  width: 12vh;
+  height: 10vh;
   border-radius: 50%;
   object-fit: cover;
 }
