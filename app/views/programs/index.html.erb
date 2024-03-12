@@ -1,161 +1,21 @@
 <%= render "/shared/topbar" %>
 
-<h4><b>MON PROGRAMME</b></h4>
-
 <%= link_to dashboard_path do%>
-
 <i class="fa-solid fa-arrow-left"></i>
 <% end %>
 
-<div class="container-program" data-controller="details">
-  <h5><b>Mes exercices quotidiens</b></h5>
-
-  <div class="bloc-exercice">
-
-    <div class="organized-bloc">
-      <h6><strong>ECHAUFFEMENT</strong></h6>
-      <button class="button-check">Je valide</button>
-    </div>
-
-    <h6>MARCHE A PIED</h6><!--Adapter avec le 'name' de l'exercice-->
-
-        <div class="align-details">
-          <!--Adapter avec 'répétition' et 'time' de l'exercice-->
-          <p><strong>Répétitions</strong><br>(NOMBRE) fois</p>
-          <p><strong>Durée moyenne</strong><br>(DUREE) minutes</p>
-        </div>
-
-      <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-      <div class="details-exercices d-none" data-details-target="detail">
-
-        <!--Adapter avec les photos des exercices-->
-        <div class="display-pictures" >
-          <img src="https://cdn.pixabay.com/photo/2016/05/24/18/49/suitcase-1412996_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2021/05/23/17/17/man-6276765_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2020/11/28/19/18/girl-5785590_1280.jpg">
-        </div>
-
-        <p><strong>Description:</strong> La marche à pied est un bon moyen pour préparer votre corps à un exercice physique.
-        De plus, elle permet d'éviter de vous blesser lors de vos efforts. Ne négligez pas cette étape!</p>
-
-
-      </div>
-
-  </div>
-
-
-  <div class="bloc-exercice">
-  <div class="organized-bloc">
-      <h6><strong>EXERCICE 1</strong></h6>
-      <button class="button-check">Je valide</button>
-    </div>
-
-    <h6>BRAS</h6><!--Adapter avec le 'name' de l'exercice-->
-
-        <div class="align-details">
-        <!--Adapter avec 'répétition' et 'time' de l'exercice-->
-          <p><strong>Répétitions</strong><br>(NOMBRE) fois</p>
-          <p><strong>Durée moyenne</strong><br>(DUREE) minutes</p>
-        </div>
-
-
-
-
-      <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-      <div class="details-exercices d-none" data-details-target="detail">
-
-
-      <!--Adapter avec les photos des exercices-->
-        <div class="display-pictures">
-          <img src="https://cdn.pixabay.com/photo/2016/05/24/18/49/suitcase-1412996_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2021/05/23/17/17/man-6276765_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2020/11/28/19/18/girl-5785590_1280.jpg">
-        </div>
-
-      <p><strong>Description:</strong> La marche à pied est un bon moyen pour préparer votre corps à un exercice physique.
-      De plus, elle permet d'éviter de vous blesser lors de vos efforts. Ne négligez pas cette étape!</p>
-
-    </div>
-
-    </div>
-
-<div class="bloc-exercice">
-  <div class="organized-bloc">
-      <h6><strong>EXERCICE 2</strong></h6>
-      <button class="button-check">Je valide</button>
-    </div>
-
-    <h6>DOS</h6><!--Adapter avec le 'name' de l'exercice-->
-
-        <div class="align-details">
-        <!--Adapter avec 'répétition' et 'time' de l'exercice-->
-          <p><strong>Répétitions</strong><br>(NOMBRE) fois</p>
-          <p><strong>Durée moyenne</strong><br>(DUREE) minutes</p>
-        </div>
-
-      <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-
-
-      <div class="details-exercices d-none" data-details-target="detail">
-
-        <!--Adapter avec les photos des exercices-->
-        <div class="display-pictures">
-          <img src="https://cdn.pixabay.com/photo/2016/05/24/18/49/suitcase-1412996_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2021/05/23/17/17/man-6276765_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2020/11/28/19/18/girl-5785590_1280.jpg">
-        </div>
-
-      <p><strong>Description:</strong> La marche à pied est un bon moyen pour préparer votre corps à un exercice physique.
-      De plus, elle permet d'éviter de vous blesser lors de vos efforts. Ne négligez pas cette étape!</p>
-
-
-    </div>
-
-  </div>
-
-<div class="bloc-exercice">
-  <div class="organized-bloc">
-      <h6><strong>EXERCICE 3</strong></h6>
-      <button class="button-check">Je valide</button>
-    </div>
-
-    <h6>JAMBES</h6><!--Adapter avec le 'name' de l'exercice-->
-
-        <div class="align-details">
-        <!--Adapter avec 'répétition' et 'time' de l'exercice-->
-          <p><strong>Répétitions</strong><br>(NOMBRE) fois</p>
-          <p><strong>Durée moyenne</strong><br>(DUREE) minutes</p>
-        </div>
-
-      <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
-
-
-      <div class="details-exercices d-none" data-details-target="detail">
-
-      <div class="details-exercices">
-
-      <!--Adapter avec les photos des exercices-->
-        <div class="display-pictures">
-          <img src="https://cdn.pixabay.com/photo/2016/05/24/18/49/suitcase-1412996_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2021/05/23/17/17/man-6276765_1280.jpg">
-          <img scr="https://cdn.pixabay.com/photo/2020/11/28/19/18/girl-5785590_1280.jpg">
-        </div>
-
-      <p><strong>Description:</strong> La marche à pied est un bon moyen pour préparer votre corps à un exercice physique.
-      De plus, elle permet d'éviter de vous blesser lors de vos efforts. Ne négligez pas cette étape!</p>
-
-
-    </div>
-
-  </div>
-
+<div class="user text-center">
+  <h4><b>MON PROGRAMME</b></h4>
+  <hr>
 </div>
 
-<div class="container-program">
-  <h5><strong>Ma progression quotidienne</strong></h5>
+<div class="container-program" data-controller="details">
 
-  <label for="file">File progress:</label>
-  <progress id="file" max="100" value="70">70%</progress>
+  <% Exercice.all.each do |exercice| %>
+    <%= render "exercice", exercice: exercice %>
+  <% end %>
+
+  <button class="checkpoint-button">Je valide mes exercices</button>
 </div>
 
 <%= render "/shared/navbar" %>

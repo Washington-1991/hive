@@ -62,38 +62,41 @@ workout_chest = Workout.create(name: "chest", photo: "workout.jpg", description:
 workput_back = Workout.create(name: "back", photo: "workout.jpg", description: "description")
 workout_legs = Workout.create(name: "upper%20legs", photo: "workout.jpg", description: "description")
 
-day = 1
+# day = 1
+workout_echauffement = Workout.create(name: "echauffement", photo: "workout.jpg", description: "descriptiotion")
 
 
-Workout.all.each do |workout|
-  url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/#{workout.name}")
-  # https://exercisedb.p.rapidapi.com/exercises/bodyPart/back
-  http = Net::HTTP.new(url.host, url.port)
-  http.use_ssl = true
+# Workout.all.each do |workout|
+#   url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/#{workout.name}")
+#   # https://exercisedb.p.rapidapi.com/exercises/bodyPart/back
+#   http = Net::HTTP.new(url.host, url.port)
+#   http.use_ssl = true
 
-  request = Net::HTTP::Get.new(url)
-  request["X-RapidAPI-Key"] = ENV["API_SPORT"]
-  request["X-RapidAPI-Host"] = 'exercisedb.p.rapidapi.com'
+#   request = Net::HTTP::Get.new(url)
+#   request["X-RapidAPI-Key"] = ENV["API_SPORT"]
+#   request["X-RapidAPI-Host"] = 'exercisedb.p.rapidapi.com'
 
-  response = http.request(request)
+#   response = http.request(request)
 
-  body = response.read_body
-  data = JSON.parse(body)
-  puts "creating exrecice"
-  data.each do |hash_exercise|
-    # Create Exercice instances with the correct association+
-    exo = Exercice.create!(
-      name: hash_exercise["name"],
-      workout: workout, # Use workout_id instead of workout
-      photo: hash_exercise["gifUrl"]
-    )
-  end
+#   body = response.read_body
+#   data = JSON.parse(body)
+#   p data
+#   puts "creating exrecice"
+#   data.each do |hash_exercise|
+#     # Create Exercice instances with the correct association+
+#     exo = Exercice.create!(
+#       name: hash_exercise["name"],
+#       workout: workout, # Use workout_id instead of workout
+#       photo: hash_exercise["gifUrl"]
+#     )
+#   end
 
-  program_workout = ProgramsWorkout.create!(program: program, workout: workout, date: Date.today + day,  completed: false)
-  day = day + 2
-end
+#   program_workout = ProgramsWorkout.create!(program: program, workout: workout, date: Date.today + day,  completed: false)
+#   day = day + 2
+# end
 
 puts "seed end"
+
 
 # (name:"Velo" , photo:"" , time:"30m et 5m recup" , repetition:"1x" , calories:"80kcl" , type:"Echauffement" , description:"Un échauffement sur un vélo stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.")
 # (name:"elliptique" , photo:"" , time:"30m et 5m recup" , repetition:"1x" , calories:"60kcl" , type:"Echauffement" , description:"Un échauffement en elliptique stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.")
@@ -105,3 +108,15 @@ puts "seed end"
 # (name:"Adducteurs" , photo:"" , time:"15m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination")
 # (name:"Trapeze" , photo:"" , time:"15m et 2m recup" , repetition:"3x15" , calories:"25kcl" , type:"Dos" , description:"Des tractions, des rotations et des positions de suspension pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination")
 # (name:"Pectoraux" , photo:"" , time:"15m et 2m recup" , repetition:"4x10" , calories:"30kcl" , type:"Pecs" , description:"Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut. Cela cible les muscles pectoraux, les épaules et les triceps")
+
+exercise = Exercice.create!(name: "Velo", photo: "/app/assets/images/workout/bike.jpg", time: "30m et 5m recup", repetition: "1x", calories: "80kcl", category: "Echauffement", description: "Un échauffement sur un vélo stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.", workout: workout_echauffement)
+exercise = Exercice.create(name: "elliptique", photo: "/app/assets/images/workout/elliptique.jpg", time: "30m et 5m recup", repetition: "1x", calories: "60kcl" , category: "Echauffement" , description: "Un échauffement en elliptique stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.", workout: workout_echauffement)
+
+exercise = Exercice.create(name: "Biceps", photo: "/app/assets/images/workout/biceps.jpg", time: "15m et 2m recup", repetition: "4x12", calories: "20kcl" , category: "Bras" , description: "Cet exercice est efficace pour développer la force et la taille des biceps.", workout: workout_echauffement)
+exercise = Exercice.create(name: "Triceps", photo: "/app/assets/images/workout/triceps.jpg", time: "15m et 2m recup", repetition: "4x12", calories: "20kcl" , category: "Bras" , description: "Cet exercice est efficace pour développer la force et la taille des triceps.", workout: workout_echauffement)
+exercise = Exercice.create(name: "Deltoide", photo: "/app/assets/images/workout/deltoide.jpg", time: "15m et 2m recup", repetition: "4x12", calories: "20kcl" , category: "Bras" , description: "Cet exercice est efficace pour développer la force et la taille des deltoide.", workout: workout_echauffement)
+exercise = Exercice.create(name: "Cuadriceps", photo: "/app/assets/images/workout/cuadriceps.jpg", time: "15m et 2m recup", repetition: "3x15", calories: "40kcl" , category: "Jambes" , description: "Un excellent exercice pour développer la force et la stabilité des quadriceps, ainsi que pour améliorer l'équilibre et la coordination", workout: workout_echauffement)
+exercise = Exercice.create(name: "Adducteurs", photo: "/app/assets/images/workout/adducteurs.jpg", time: "15m et 2m recup", repetition: "3x15", calories: "40kcl" , category: "Jambes" , description: "Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination", workout: workout_echauffement)
+exercise = Exercice.create(name: "Trapeze", photo: "/app/assets/images/workout/trapeze.jpg", time: "15m et 2m recup", repetition: "3x15", calories: "25kcl" , category: "Dos" , description: "Des tractions, des rotations et des positions de suspension pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination", workout: workout_echauffement)
+exercise = Exercice.create(name: "Pectoraux", photo: "/app/assets/images/workout/pecs.jpg", time: "15m et 2m recup", repetition: "4x10", calories: "30kcl" , category: "Pecs" , description: "Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut. Cela cible les muscles pectoraux, les épaules et les triceps", workout: workout_echauffement)
+
