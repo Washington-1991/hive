@@ -8,22 +8,10 @@
   margin: 8px;
 }
 
-.card-log-in-logo{
-
-  background-image: url("hive-logo.png");
-  background-size: cover;
-  position: absolute;
-  margin: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  width: 30%;
-  height: 10vh;
-}
 
 .card-log-in-h2{
   justify-content: center;
   width: 90%;
-  margin-top: 20vh;
 }
 
 .card-log-in-form{
@@ -36,13 +24,20 @@
 }
 
 .form-actions input {
+  margin: auto;
+  justify-content: center;
   color: white;
   font-size: 24px;
-  background-color: blue;
+  background-color: #0d6efd;
   padding: 20px;
-  border: 1px solid blue;
-  border-radius: 15px;
+  border: 2px solid #0d6efd;
+  border-radius: 40px;
   height: 10vh;
   width: 16vh;
   margin: 0vh;
+}
+
+.card-log-in-logo img{
+  width: 300px;
+  height: 300px;
 }
