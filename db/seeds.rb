@@ -96,12 +96,17 @@ end
 puts "seed end"
 
 (name:"Velo" , photo:"" , time:"30m et 5m recup" , repetition:"1x" , calories:"80kcl" , type:"Echauffement" , description:"Un échauffement sur un vélo stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.")
-(name:"elliptique" , photo:"" , time:"30m et 5m recup" , repetition:"1x" , calories:"60kcl" , type:"Echauffement" , description:"Un échauffement en elliptique stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.")
+(name:"Elliptique" , photo:"" , time:"30m et 5m recup" , repetition:"1x" , calories:"60kcl" , type:"Echauffement" , description:"Un échauffement en elliptique stationnaire est un excellent moyen de préparer votre corps à l'activité physique à venir.")
 
-(name:"Biceps" , photo:"" , time:"15m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des biceps.")
-(name:"Triceps" , photo:"" , time:"15m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des triceps.")
-(name:"Deltoide" , photo:"" , time:"15m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des deltoide.")
-(name:"Cuadriceps" , photo:"" , time:"15m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des quadriceps, ainsi que pour améliorer l'équilibre et la coordination")
-(name:"Adducteurs" , photo:"" , time:"15m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination")
-(name:"Trapeze" , photo:"" , time:"15m et 2m recup" , repetition:"3x15" , calories:"25kcl" , type:"Dos" , description:"Des tractions, des rotations et des positions de suspension pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination")
-(name:"Pectoraux" , photo:"" , time:"15m et 2m recup" , repetition:"4x10" , calories:"30kcl" , type:"Pecs" , description:"Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut. Cela cible les muscles pectoraux, les épaules et les triceps")
+(name:"Biceps" , photo:"" , time:"10m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des biceps.")
+(name:"Triceps" , photo:"" , time:"10m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des triceps.")
+(name:"Deltoide" , photo:"" , time:"10m et 2m recup" , repetition:"4x12" , calories:"20kcl" , type:"Bras" , description:"Cet exercice est efficace pour développer la force et la taille des deltoide.")
+
+(name:"Cuadriceps" , photo:"" , time:"10m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des quadriceps, ainsi que pour améliorer l'équilibre et la coordination")
+(name:"Adducteurs" , photo:"" , time:"10m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination")
+(name:"Mollets" , photo:"" , time:"10m et 2m recup" , repetition:"3x15" , calories:"40kcl" , type:"Jambes" , description:"Un excellent exercice pour développer la force et la stabilité des mollets, ainsi que pour améliorer l'équilibre et la coordination")
+
+(name:"Trapeze" , photo:"" , time:"10m et 2m recup" , repetition:"3x15" , calories:"25kcl" , type:"Dos" , description:"Des tractions pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination")
+(name:"Grand dorsal" , photo:"" , time:"10m et 2m recup" , repetition:"3x15" , calories:"25kcl" , type:"Dos" , description:"Des tractions, améliorer la stabilité du tronc et développer la coordination")
+
+(name:"Pectoraux" , photo:"" , time:"10m et 2m recup" , repetition:"4x10" , calories:"30kcl" , type:"Pecs" , description:"Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut.")

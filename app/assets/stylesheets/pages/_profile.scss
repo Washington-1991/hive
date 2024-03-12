@@ -1,5 +1,5 @@
 // here is where profile-container starts
-.profile-container{
+.profile-container-info{
   margin: 8px;
   padding: 16px;
   background-color: #182131;
@@ -23,3 +23,21 @@
 }
 
 // here is where profile-card-test starts
+
+.logo img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.button-profile-test{
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+.button-test{
+  justify-content: center;
+  margin: auto;
+}
