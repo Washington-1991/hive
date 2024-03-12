@@ -11,7 +11,7 @@
 
 
     <% if user_signed_in? %>
-    <%= link_to "delete", destroy_user_session_path, data: { turbo_method: :delete, confirm: "Are you sure you want to log out?" } %>
+     <%= link_to "delete", destroy_user_session_path, data: { turbo_method: :delete, confirm: "Are you sure you want to log out?" } %>
     <% end %>
   </div>
 
