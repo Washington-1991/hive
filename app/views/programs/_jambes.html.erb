@@ -1,0 +1,21 @@
+<div class="bloc-exercice">
+
+  <h5><strong><%= @jambes.category %></strong></h5>
+
+    <div class="organized-bloc">
+      <div>
+        <h6><strong><%= @jambes.name %></strong></h6>
+        <p>Répétitions: <%= @jambes.repetition %> fois</p>
+        <p>Durée: <%= @jambes.time %> mn(s)</p>
+      </div>
+      <img src= <%=@jambes.photo %> >
+    </div>
+
+
+    <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
+    <div class="details-exercices d-none" data-details-target="detail">
+      <p><strong>calories</strong><br> <%= @jambes.calories %> kcl</p>
+      <p><strong>Description:</strong> <%= @jambes.description %></p>
+    </div>
+
+</div>

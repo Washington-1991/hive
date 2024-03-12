@@ -1,0 +1,21 @@
+<div class="bloc-exercice">
+
+  <h5><strong><%= @echauffement.category %></strong></h5>
+
+    <div class="organized-bloc">
+      <div>
+        <h6><strong><%= @echauffement.name %></strong></h6>
+        <p>Répétitions: <%= @echauffement.repetition %> fois</p>
+        <p>Durée: <%= @echauffement.time %> mn(s)</p>
+      </div>
+      <img src= <%=@echauffement.photo %> >
+    </div>
+
+
+    <p class="btn btn-gradient" data-action="click->details#display" >Plus de détails</p>
+    <div class="details-exercices d-none" data-details-target="detail">
+      <p><strong>calories</strong><br> <%= @echauffement.calories %> kcl</p>
+      <p><strong>Description:</strong> <%= @echauffement.description %></p>
+    </div>
+
+</div>

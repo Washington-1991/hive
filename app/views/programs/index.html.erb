@@ -11,9 +11,14 @@
 
 <div class="container-program" data-controller="details">
 
-  <% Exercice.all.each do |exercice| %>
-    <%= render "exercice", exercice: exercice %>
-  <% end %>
+  <%= render "echauffement"%>
+  <%= render "bras" %>
+  <%= render "jambes" %>
+  <%= render "other" %>
+
+  <%# <% Exercice.where.not(category:"Echauffement").all.sample(3).each do |exercice| %>
+    <%# <%= render "exercice", exercice: exercice %>
+  <%# <% end %>
 
   <button class="checkpoint-button">Je valide mes exercices</button>
 </div>
