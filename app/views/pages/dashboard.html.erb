@@ -27,18 +27,21 @@
     <p><em> Full body workout - 12 semaines </em></p>
     <!--mettre le nom du programs_workout + la durée du programme-->
 
+
     <div class="dash-btn">
-      <%= link_to "GO ", "#" %>
+      <%= link_to "GO ", "programs" %>
     </div>
   </div>
 </div>
 
+ <%= link_to progress_path do%>
   <div class="info-program mt-4">
     <div class="d-flex flex-column justify-content-center align-items-center text-center">
       <h5><b>Ma progression</b></h5>
       <div class=stats-cards>
         <i class="fa-solid fa-chart-simple"></i>
         <i class="fa-solid fa-chart-simple"></i>
+        <% end %>
       </div>
     </div>
   </div>
