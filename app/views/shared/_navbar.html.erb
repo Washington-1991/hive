@@ -1,15 +1,19 @@
 <div class="navbar-bot fixed-bottom">
 
+    <%= link_to dashboard_path do%>
   <div class="card-dashboard">
     <div class="button-action">
+
       <button class="button-dashboard">
-      <a href=""><i class="fa-solid fa-chart-line"></i></a>
+      <i class="fa-solid fa-chart-line"></i>
       </button>
     </div>
+
     <div class="paragraph">
       <p>Dashboard</p>
     </div>
   </div>
+  <% end %>
 
   <div class="card-community">
     <div class="button-action">
@@ -28,11 +32,11 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="dropdown-menu">
-          <li><a class="dropdown-item test" href="#">Profil</a></li>
+          <li><a class="dropdown-item test" href="profile">Profil</a></li>
           <li><a class="dropdown-item test" href="#">Exercises</a></li>
           <li><a class="dropdown-item test" href="aboutus">A propos de Hive</a></li>
           <li><a class="dropdown-item test" href="#">Parametres</a></li>
-          <li><a class="dropdown-item test" href="#">Log-out</a></li>
+          <li><a class="dropdown-item test" href="logout">Log-out</a></li>
         </div>
 
         <div class="paragraph">
