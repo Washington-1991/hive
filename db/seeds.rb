@@ -9,6 +9,7 @@ Aptitude.destroy_all
 ProgramsWorkout.destroy_all
 Workout.destroy_all
 Program.destroy_all
+Message.destroy_all
 User.destroy_all
 
 # url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
@@ -50,7 +51,6 @@ user_weights = UserWeight.create!(user: user, weight: 100.0, created_at: Date.to
 user_weights = UserWeight.create!(user: user, weight: 90.0, created_at: Date.today - 100, updated_at: Date.today - 100)
 user_weights = UserWeight.create!(user: user, weight: 85.0, created_at: Date.today - 70, updated_at: Date.today - 70)
 user_weights = UserWeight.create!(user: user, weight: 80.0, created_at: Date.today - 40, updated_at: Date.today - 40)
-
 
 
 #create program
@@ -106,4 +106,3 @@ exercise = Exercice.create(name: "Cuadriceps", photo: "/app/assets/images/workou
 exercise = Exercice.create(name: "Adducteurs", photo: "/app/assets/images/workout/adducteurs.jpg", time: 15, repetition: 45, calories: 40, category: "Jambes", description: "Un excellent exercice pour développer la force et la stabilité des adducteurs, ainsi que pour améliorer l'équilibre et la coordination", workout: workout_echauffement)
 exercise = Exercice.create(name: "Trapèze", photo: "/app/assets/images/workout/trapeze.jpg", time: 15, repetition: 45, calories: 25, category: "Dos", description: "Des tractions, des rotations et des positions de suspension pour renforcer les muscles du haut du corps, améliorer la stabilité du tronc et développer la coordination", workout: workout_echauffement)
 exercise = Exercice.create(name: "Pectoraux", photo: "/app/assets/images/workout/pecs.jpg", time: 15, repetition: 40, calories: 30, category: "Pecs", description: "Allongé sur un banc, tu abaisses la barre ou les alternes vers la poitrine, puis la pousses vers le haut. Cela cible les muscles pectoraux, les épaules et les triceps", workout: workout_echauffement)
-

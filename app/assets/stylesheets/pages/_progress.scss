@@ -1,27 +1,34 @@
 // container-progress
-.container-progress{
-background-color: #182131;
-margin: 16px;
-padding: 8px;
-border-radius: 12px;
-border: 1px solid #0d6efd;
+.container-progress {
+  background-color: #182131;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #0d6efd;
 }
 // container-progress
 
 // simple_form
 
 .simple_form {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.simple_form input{
-  background-color: #647bc2;
+.simple_form input {
+  background-color: #5b8ef1;
   color: white;
   border: 1px solid #647bc2;
   border-radius: 40px;
   margin: 8px;
 }
 
+.user_weight {
+  background-color: white !important;
+  // color: white;
+  // border: 1px solid #647bc2;
+  // border-radius: 40px;
+  // margin: 8px;
+}
 // simple_form

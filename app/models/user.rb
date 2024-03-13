@@ -14,4 +14,14 @@ class User < ApplicationRecord
     end
     return weights
   end
+
+
+  def user_calories
+    user_calories = {}
+    user_calories.each do |calorie|
+      user_calories[calories.created_at.strftime("%B %d, %Y")] = calorie.calorie
+    end
+    return user_calories
+  end
+
 end
