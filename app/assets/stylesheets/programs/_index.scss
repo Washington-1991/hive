@@ -1,5 +1,4 @@
 
-
 .container-program {
   display: flex;
   flex-direction: column;
@@ -62,10 +61,28 @@ img {
 
 .checkpoint-button {
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #3a4f97;
   font-weight: bold;
   color: white;
 
+}
+
+.container-notification {
+  text-align: center;
+  padding: 15px;
+  margin: 40px;
+  border-radius: 10px;
+  background-color: #182131;
+}
+
+.centre {
+  text-align: center;
+}
+
+.organized-button {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }

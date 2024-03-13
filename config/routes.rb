@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   resources :programs do
     resources :workouts, only: [:new, :create]
+    resources :messages, only:[:new, :create, :index]
   end
 
   resources :user_weights, only: [:create]
