@@ -1,6 +1,6 @@
 // progress-container
 .progress-container{
-padding: 8px;
+padding: 16px;
 }
 // progress-container
 
@@ -8,9 +8,14 @@ padding: 8px;
 // progress-card-progress
 .progress-card-progress {
 background-color: #182131;
-padding: 8px;
+padding: 16px;
 border-radius: 12px;
-border: 1px solid #0d6efd;
+
+}
+
+.progress-card-progress-weight{
+  display: flex;
+  justify-content: space-between;
 }
 // // progress-card-progress
 
@@ -27,7 +32,7 @@ background-color: #5b8ef1;
 color: white;
 border: 1px solid #647bc2;
 border-radius: 40px;
-margin: 8px;
+margin: 16px;
 }
 
 .user_weight {
@@ -35,7 +40,7 @@ background-color: white !important;
 color: white;
 border: 1px solid #647bc2;
 border-radius: 40px;
-margin: 8px;
+margin: 16px;
 }
 
 // simple_form
@@ -45,8 +50,7 @@ margin: 8px;
 display: flex;
 justify-content: left;
 background-color: #182131;
-padding: 8px;
+padding: 16px;
 border-radius: 12px;
-border: 1px solid #0d6efd;
 }
 // card-calories
