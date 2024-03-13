@@ -16,13 +16,14 @@
   <%= render "jambes" %>
   <%= render "other" %>
 
-
-
-  <%# <% Exercice.where.not(category:"Echauffement").all.sample(3).each do |exercice| %>
-    <%# <%= render "exercice", exercice: exercice %>
-  <%# <% end %>
-
   <button class="checkpoint-button">Je valide mes exercices</button>
+  -->
+  <div class="centre" data-controller="notifications">
+    <button class="checkpoint-button" data-action="click->notifications#display">Je valide mes exercices</button>
+    <%= render "completed"%>
+  </div>
+
+
 </div>
 
 <%= render "/shared/navbar" %>
