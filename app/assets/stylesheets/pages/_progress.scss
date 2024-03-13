@@ -1,34 +1,52 @@
-// container-progress
-.container-progress {
-  background-color: #182131;
-  margin: 16px;
-  padding: 8px;
-  border-radius: 12px;
-  border: 1px solid #0d6efd;
+// progress-container
+.progress-container{
+padding: 8px;
 }
-// container-progress
+// progress-container
 
-// simple_form
+
+// progress-card-progress
+.progress-card-progress {
+background-color: #182131;
+padding: 8px;
+border-radius: 12px;
+border: 1px solid #0d6efd;
+}
+// // progress-card-progress
+
+// // simple_form
 
 .simple_form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .simple_form input {
-  background-color: #5b8ef1;
-  color: white;
-  border: 1px solid #647bc2;
-  border-radius: 40px;
-  margin: 8px;
+background-color: #5b8ef1;
+color: white;
+border: 1px solid #647bc2;
+border-radius: 40px;
+margin: 8px;
 }
 
 .user_weight {
-  background-color: white !important;
-  // color: white;
-  // border: 1px solid #647bc2;
-  // border-radius: 40px;
-  // margin: 8px;
+background-color: white !important;
+color: white;
+border: 1px solid #647bc2;
+border-radius: 40px;
+margin: 8px;
 }
+
 // simple_form
+
+// card-calories
+.card-calories{
+display: flex;
+justify-content: left;
+background-color: #182131;
+padding: 8px;
+border-radius: 12px;
+border: 1px solid #0d6efd;
+}
+// card-calories
