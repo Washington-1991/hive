@@ -7,13 +7,14 @@
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
+  text-align: justify;
   }
 
 .bloc-exercice {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  background-color: #182131;
+  background-color: #112740;
 
   }
 
@@ -72,17 +73,11 @@ img {
 .container-notification {
   text-align: center;
   padding: 15px;
-  margin: 40px;
+  margin: 10px;
   border-radius: 10px;
-  background-color: #182131;
+  background-color: #112740;
 }
 
 .centre {
   text-align: center;
-}
-
-.organized-button {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
 }
