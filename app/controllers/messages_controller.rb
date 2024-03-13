@@ -4,6 +4,8 @@ class MessagesController < ApplicationController
     @messages = Message.all
     @message = Message.new
     @echauffement = Exercice.where(category: "Echauffement").all
+    @bras = Exercice.where(category: "Bras").all
+    @jambes = Exercice.where(category: "Jambes").all
 
 
   end
