@@ -10,7 +10,8 @@
 
 
 
-  <div class="profile-card-info info-session text-center mt-5">
+<div class="container mt-4">
+  <div class="user text-center">
 
     <h2> Hello <%= current_user.nickname.capitalize %>  </h2>
     <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
@@ -20,6 +21,6 @@
 
 </div>
 
-    <div class="profile-card-button-test" >
+    <div class="next-link" >
       <%= link_to "Test d'aptitude", aptitudes_path  %>
     </div>

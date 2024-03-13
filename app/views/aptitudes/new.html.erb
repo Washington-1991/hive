@@ -24,8 +24,8 @@
 <%# here is where starts the topbar-container %>
 
 
-<div class="container aptitude" >
-  <div class="info-apt">
+<div class="container aptitude" data-controller="display-aptitude" >
+  <div class="info-apt" data-display-aptitude-target="information">
     <div class="info-apt-title">
       <h1 class="title"> Test de Mobilité  </h1>
       <hr>
@@ -34,16 +34,30 @@
     <div class="info-program">
       <p> <i class="fa-regular fa-clock"></i> <em>Durée moyenne</em> : 12 min </p>
       <p> Testez vous au moins 2 heures après le lever </p>
+      <p> <i class="fa-solid fa-triangle-exclamation"></i> Selectionner la photo qui vous semble la plus optimale en fonction de vos resultats </p>
       <p class="advice"><em> Évitez de vous tester juste après un entraînement </em></p>
     </div>
       <hr>
+
+    <button class="next-link" data-action="click->display-aptitude#display">Let's Go</button>
   </div>
 
+
+
   <%# --------------- Caroussel ---------------- %>
-  <div class="krousel">
+
+  <div class="krousel d-none" data-display-aptitude-target="training">
+
     <%= form_for @aptitude, data: { controller: "aptitude" } do |f| %>
       <%# ------------ CAROUSSEL 1 ------------- %>
+
       <div id="carouselExampleRide" class="carousel slide " data-bs-ride="false" data-aptitude-target="aptitudeTest" >
+        <div class="container mt-4">
+         <div class="user text-center">
+           <h4><b>Mobilité Épaule</b></h4>
+           <hr>
+       </div>
+         </div>
         <div>
         <%= f.text_field :shoulder,
                         class:"d-none",
@@ -87,6 +101,12 @@
     <%# ------------ CAROUSSEL 2 ------------- %>
 
   <div id="carouselExampleRide2" class="carousel slide d-none" data-bs-ride="false" data-aptitude-target="aptitudeTest">
+  <div class="container mt-4">
+         <div class="user text-center">
+           <h4><b>Mobilité de Hanche </b></h4>
+           <hr>
+       </div>
+         </div>
       <div>
       <%= f.text_field :hip,
                       class:"d-none",
@@ -130,6 +150,12 @@
 <%# ------------ CAROUSSEL 3 ------------- %>
 
   <div id="carouselExampleRide3" class="carousel slide d-none" data-bs-ride="false" data-aptitude-target="aptitudeTest">
+  <div class="container mt-4">
+         <div class="user text-center">
+           <h4><b>Mobilité de Cheville </b></h4>
+           <hr>
+       </div>
+         </div>
     <div>
     <%= f.text_field :ankle,
                     class:"d-none",
