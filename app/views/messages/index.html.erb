@@ -4,22 +4,28 @@
 
 
 
+
   <div class="container mt-4">
     <div class="user text-center">
   <h1> Les posts </h1>
   </div>
   </div>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Creer un post +
-  </button>
+
+
+
+
+
+
+
+<div class="messages-card-post">
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Creer un post</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -34,12 +40,13 @@
             <%end%>
 
             </div>
+</div>
 
             </div>
-        <div class="modal-footer">
+        <%# <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        </div> %>
       </div>
     </div>
   </div>
@@ -48,7 +55,7 @@
 
     <% Message.all.each do |message|%>
       <div class="container mt-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="">
           <div class="card-body">
           <% if message.photo.attached? %>
             <%= cl_image_tag message.photo.key, class: "img-message" %>
@@ -62,13 +69,33 @@
       <% end %>
 
   <div class="container mt-4">
-  <div class="card" style="width: 18rem;">
+  <div class="card" style="">
     <img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F114b5166-5f4c-4dd0-9d1e-f2e952c42d85.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1" class="card-img-top" alt="...">
     <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
+  <div class="reaction-buttons">
+    <button class="like"><i class="fa-solid fa-thumbs-up"></i>
+      <a href=""></a>
+    </button>
+    <button class="love"><i class="fa-solid fa-heart"></i>
+      <a href=""></a>
+    </button>
+    <button class="fire"><i class="fa-solid fa-fire"></i>
+      <a href=""></a>
+    </button>
   </div>
   </div>
+
+
+
+  </div>
+<div class="messages-card-button-create-post">
+  <button type="button" class="button-create-post" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    +
+  </button>
+</div>
+
 
 </div>
 
