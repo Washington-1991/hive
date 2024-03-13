@@ -8,6 +8,7 @@
   <div class="container mt-4">
     <div class="user text-center">
   <h1> Les posts </h1>
+  <hr>
   </div>
   </div>
   <!-- Button trigger modal -->
@@ -61,11 +62,18 @@
           <% if message.photo.attached? %>
             <%= cl_image_tag message.photo.key, class: "img-message" %>
           <% end %>
-            <h5 class="card-title"><%= message.user.nickname %></h5>
-            date <%= message.created_at %>
+            <h5 class="card-title"><%= message.user.nickname.capitalize %></h5>
+            <p><i class="fa-regular fa-calendar"></i> <em><%= Date.today.strftime('%d %a %y')%></em></p>
             <p class="card-text"><%= message.content %></p>
             <span class="name-exo"><%= @echauffement.sample.name %></span>
-            <p> <i class="fa-solid fa-fire-flame-simple"></i> <%= @echauffement.sample.calories %> Kcal</p>
+            <span class="name-exo"><%= @bras.sample.name %></span>
+            <span class="name-exo"><%= @jambes.sample.name %></span>
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <div class="bolt mt-2 mb-2 ">
+                <i class="fa-solid fa-fire-flame-simple"></i>
+              </div>
+              <span> <%= @echauffement.sample.calories + @bras.sample.calories + @jambes.sample.calories %> Kcal </span>
+            </div>
           </div>
         </div>
       </div>
