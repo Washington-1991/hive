@@ -2,6 +2,13 @@
 <%= link_to dashboard_path do%>
 <i class="fa-solid fa-arrow-left"></i>
 
+<div class="container mt-4">
+  <div class="user text-center">
+    <h4><b>MA PERTE DE POIDS </b></h4>
+    <hr>
+  </div>
+</div>
+
 
 <div class="container-progress">
 
@@ -18,8 +25,24 @@
 <div class="container mt-4">
  <%= simple_form_for @user_weights do |f| %>
     <%= f.number_field :weight %>
-    <%= f.submit %>
+    <%= f.submit 'Indique ton poids' %>
   <% end %>
+</div>
+
+
+<div class="container mt-4">
+  <div class="user text-center">
+    <h4><b>MES CALORIES </b></h4>
+    <hr>
+  </div>
+</div>
+
+<div class="container mt-4">
+       <%= column_chart [
+        {name: "Calories 🔥", data: {"2024-01-01" => 300, "2024-01-02" => 100,
+        "2024-01-03" => 401, "2024-01-04" => 120,"2021-01-05" => 312 } },
+
+    ] %>
 </div>
 
  <%= render "shared/navbar" %>
