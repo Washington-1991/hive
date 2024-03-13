@@ -31,10 +31,11 @@
         <div class="modal-body">
           <div class="container mt-4">
             <h1> Montre à tout le monde ce que tu as fait</h1>
-
             <%=simple_form_for @message do |f|%>
 
               <%=f.input :content%>
+              <%= current_user.nickname %> a réalisée  <%= @echauffement.name %>
+
               <%=f.input :photo, as: :file%>
               <%=f.submit%>
             <%end%>
@@ -63,6 +64,8 @@
             <h5 class="card-title"><%= message.user.nickname %></h5>
             date <%= message.created_at %>
             <p class="card-text"><%= message.content %></p>
+            <span class="name-exo"><%= @echauffement.sample.name %></span>
+            <p> <i class="fa-solid fa-fire-flame-simple"></i> <%= @echauffement.sample.calories %> Kcal</p>
           </div>
         </div>
       </div>

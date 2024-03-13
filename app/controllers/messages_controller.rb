@@ -3,6 +3,8 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all
     @message = Message.new
+    @echauffement = Exercice.where(category: "Echauffement").all
+
 
   end
 
