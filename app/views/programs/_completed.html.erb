@@ -7,7 +7,7 @@
     <i class="fa-solid fa-fire-flame-curved"></i>
     <i class="fa-solid fa-fire-flame-curved"></i>
     <i class="fa-solid fa-fire-flame-curved"></i>
-    <h5>BRAVO</h5>
+    <h4>BRAVO</h4>
     <i class="fa-solid fa-fire-flame-curved"></i>
     <i class="fa-solid fa-fire-flame-curved"></i>
     <i class="fa-solid fa-fire-flame-curved"></i>
@@ -17,14 +17,16 @@
 
     <div>
       <p>Tous les objectifs sont remplis.</p>
-      <p>Tu as brûlé [SUM CALORIES] kcl aujourd'hui.</p>
+      <p>Tu as brûlé <%= @sum %> kcl aujourd'hui.</p>
     </div>
 
-    <div class="organized-button">
+    <div class="centre">
       <%= link_to messages_path do%>
       <button class="checkpoint-button">Partagez</button>
       <% end %>
+    </div>
 
+    <div class="centre">
       <%= link_to dashboard_path do%>
       <button class="checkpoint-button">Retour</button>
       <% end %>

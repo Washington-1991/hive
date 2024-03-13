@@ -5,5 +5,8 @@ class ProgramsController < ApplicationController
     @jambes = Exercice.where(category: "Jambes").all.sample
     category = ["Pecs", "Dos"].sample
     @other = Exercice.where(category: category).all.sample
+
+    @sum = @echauffement.calories + @bras.calories + @jambes.calories + @other.calories
   end
+
 end
