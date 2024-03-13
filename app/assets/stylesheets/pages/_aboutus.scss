@@ -14,15 +14,28 @@
 
 // this is where aboutus-card-presentation-carrousel starts
 .aboutus-card-presentation-carrousel{
+  text-align: justify;
   background-color: #182131;
-  border: 1px solid #0d6efd;
   border-radius: 15px;
   padding: 8px;
 }
-
+.carousel-inner{
+  border-radius: 15px;
+  height: 300px;
+  width: 300px;
+}
 .carousel-item{
   border-radius: 15px;
+  height: 300px;
+  width: 300px;
 }
+
+.carousel-item img{
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
 // this is where aboutus-card-presentation-carrousel ends
 
 // this is where aboutus-card-presentation starts
@@ -34,15 +47,21 @@
 
 // this is where aboutus-card-carrousel starts
 .aboutus-card-carrousel{
-
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
   width: 70%;
   margin: auto;
 }
+
+
 // this is where aboutus-card-carrousel ends
 
 // this is where aboutus-card-information starts
 .aboutus-card-information{
-  border: 1px solid #0d6efd;
+  justify-content: center;
+  text-align: justify;
   background-color: #182131;
   border-radius: 15px;
   padding: 8px;
@@ -51,15 +70,18 @@
 .aboutus-card-information img{
   border-radius: 15px;
   background-image: cover;
-  height: 40vh;
-  width: 40vh;
+  height: 300px;
+  width: 300px;
   margin-top: 16px;
+  margin-left: 20px;
+
 }
 // this is where aboutus-card-information ends
 
 // this is where aboutus-card-philosophy starts
 .aboutus-card-philosophy{
-  border: 1px solid #0d6efd;
+  justify-content: center;
+  text-align: justify;
   background-color: #182131;
   border-radius: 15px;
   padding: 16px;
@@ -72,5 +94,6 @@
   border-radius: 15px;
   height: 300px;
   width: 300px;
+  margin: 14px;
 }
 // this is where aboutus-card-philosophy img ends
