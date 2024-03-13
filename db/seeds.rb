@@ -9,6 +9,7 @@ Aptitude.destroy_all
 ProgramsWorkout.destroy_all
 Workout.destroy_all
 Program.destroy_all
+Message.destroy_all
 User.destroy_all
 
 # url = URI("https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10")
@@ -50,7 +51,6 @@ user_weights = UserWeight.create!(user: user, weight: 100.0, created_at: Date.to
 user_weights = UserWeight.create!(user: user, weight: 90.0, created_at: Date.today - 100, updated_at: Date.today - 100)
 user_weights = UserWeight.create!(user: user, weight: 85.0, created_at: Date.today - 70, updated_at: Date.today - 70)
 user_weights = UserWeight.create!(user: user, weight: 80.0, created_at: Date.today - 40, updated_at: Date.today - 40)
-
 
 
 #create program
