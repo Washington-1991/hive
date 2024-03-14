@@ -1,14 +1,12 @@
-
 // messages-container
-.messages-container{
+.messages-container {
   padding: 8px;
   height: 82vh;
-
 }
 // messages-container
 
 // messages-card-button-create-post
-.messages-card-button-create-post{
+.messages-card-button-create-post {
   position: fixed;
   bottom: 10vh;
   display: flex;
@@ -17,34 +15,32 @@
   width: 100%;
 }
 
-.messages-card-button-create-post button{
-text-decoration: none !important;
-color: white;
-background-color: #152f4ca8;
-padding: 0px;
-border-radius: 40px;
-width: 64px;
-border: 2px dotted #ffffff;
-font-size: 40px;
-height: 64px;
+.messages-card-button-create-post button {
+  text-decoration: none !important;
+  color: white;
+  background-color: #152f4ca8;
+  padding: 0px;
+  border-radius: 40px;
+  width: 64px;
+  border: 2px dotted #ffffff;
+  font-size: 40px;
+  height: 64px;
 }
 
 // messages-card-button-create-post
 
 // messages-card-post
-.messages-card-post{
-
+.messages-card-post {
 }
 
-.card{
-  background-color: #182131;;
+.card {
+  background-color: #182131;
 
   color: white;
   border-radius: 40px;
-
 }
 
-.card img{
+.card img {
   object-fit: cover;
   height: 300px;
   width: 300px;
@@ -54,20 +50,20 @@ height: 64px;
 // messages-card-post
 
 // modal-content
-.modal-content{
+.modal-content {
   background-color: #182131;
   border-radius: 40px;
 }
 // modal-content
 
 // reaction-buttons
-.reaction-buttons{
+.reaction-buttons {
   display: flex;
   justify-content: right;
   font-size: 24px;
 }
 
-.reaction-buttons button{
+.reaction-buttons button {
   border: 2px solid #182131;
   color: white;
   border-radius: 40px;
@@ -75,5 +71,8 @@ height: 64px;
   padding: 8px;
 }
 
+.card-body h5 {
+  margin-top: 8px;
+}
 
 // reaction-buttons
