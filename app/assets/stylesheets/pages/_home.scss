@@ -73,7 +73,7 @@ width: 83%;
   margin: 0vh;
 }
 
-.card-home-button-log-in{
+.card-home-button-log-in {
   margin: auto;
   justify-content: center;
   color: white;
@@ -85,10 +85,26 @@ width: 83%;
   height: 10vh;
   width: 16vh;
   margin: 0vh;
+  padding-left: 28px;
 }
 s
 .card-home-button a{
   justify-content: center;
   margin: auto;
   padding-left: 24px;
+}
+
+.carrousel-button-next-question button{
+  margin: auto;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  background-color: #647bc2;
+  padding: 20px;
+  border: 2px solid #647bc2;
+  border-radius: 40px;
+  height: 10vh;
+  width: 16vh;
+  margin: 0vh;
+  padding-left: 28px;
 }

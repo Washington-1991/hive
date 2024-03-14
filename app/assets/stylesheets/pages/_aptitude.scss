@@ -82,3 +82,23 @@
   display: flex;
   justify-content: center;
 }
+
+.aptitude-button-next button {
+  margin: auto;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  background-color: #647bc2;
+  padding: 12px;
+  border: 2px solid #647bc2;
+  border-radius: 40px;
+  height: 10vh;
+  width: 16vh;
+  margin: 0vh;
+  padding-left: 16px;
+}
+
+.carrousel-button-next-question{
+  display: flex;
+  justify-content: center
+}
