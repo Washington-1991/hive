@@ -2,24 +2,15 @@
   <%= render 'shared/topbar' %>
 
 <div class="profile-container">
-
   <div class="profile-card-logo">
     <%= image_tag  "hive-logo.png", width: "300px"%>
   </div>
-
-
-
-
-<div class="container">
+<div class="container mt-4 mb-4">
   <div class="user text-center">
-    <div class="profile-card-information">
-      <h2> Hello <%= current_user.nickname.capitalize %>  </h2>
-      <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
-    </div>
-
+    <h2> Hello <%= current_user.nickname.capitalize %>  </h2>
+    <p> Voici le lien vers votre Test d'aptitude qui déterminera votre programme</p>
 
   </div>
-
 </div>
   <div class="profile-card-button-test">
 
