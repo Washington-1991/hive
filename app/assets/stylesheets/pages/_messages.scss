@@ -10,19 +10,20 @@
   position: fixed;
   bottom: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 8px;
   width: 100%;
+  padding-right: 30px;
 }
 
 .messages-card-button-create-post button {
   text-decoration: none !important;
   color: white;
-  background-color: #152f4ca8;
+  background-color: #5b8ef1;
   padding: 0px;
   border-radius: 40px;
   width: 64px;
-  border: 2px dotted #ffffff;
+  border: none;
   font-size: 40px;
   height: 64px;
 }
@@ -63,3 +64,6 @@
   border-radius: 40px;
 }
 // reaction-buttons
+.my-program-card-heading {
+  font-size: 24px;
+}

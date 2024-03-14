@@ -1,16 +1,19 @@
 <%= render "/shared/topbar" %>
 <div class="progress-container">
 
+  <div class="arrow d-flex">
+      <%= link_to dashboard_path do%>
+            <i class="fa-solid fa-arrow-left"></i>
+        <% end %>
 
-  <%= link_to dashboard_path do%>
-  <i class="fa-solid fa-arrow-left"></i>
-
-  <div class="container mt-4">
-    <div class="user text-center">
-      <h4><b>MA PERTE DE POIDS </b></h4>
-      <hr>
-    </div>
+        <div class="container mt-4">
+          <div class="user text-center">
+            <h4><b>MA PERTE DE POIDS </b></h4>
+            <hr>
+          </div>
+        </div>
   </div>
+
 
 
   <div class="progress-card-progress">
@@ -18,7 +21,6 @@
 
     <%= line_chart current_user.get_weights %>
 
-    <% end %>
 
 
 
