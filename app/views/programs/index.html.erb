@@ -14,13 +14,14 @@
 
     <div class="container-program" data-controller="details">
 
+
       <%= render "echauffement"%>
       <%= render "bras" %>
       <%= render "jambes" %>
       <%= render "other" %>
 
     <div class="centre" data-controller="notifications">
-      <button class="checkpoint-button" data-action="click->notifications#display" data-notifications-target="notification">Je valide mes exercices</button>
+      <!--<button class="checkpoint-button" data-action="click->notifications#display" data-notifications-target="notification">Je valide mes exercices</button>-->
       <%= render "completed"%>
     </div>
 
