@@ -3,7 +3,7 @@
 
   <%# topbar-avatar starts %>
   <div class="topbar-avatar">
-   <%= image_tag  "cristian.jpg"%>
+   <%= image_tag  ""%>
   </div>
   <%# topbar-avatar ends %>
 
@@ -24,7 +24,7 @@
 <%# here is where starts the topbar-container %>
 
 
-<div class="container aptitude" data-controller="display-aptitude" >
+<div class="container-aptitude" data-controller="display-aptitude" >
   <div class="info-apt" data-display-aptitude-target="information">
     <div class="info-apt-title">
       <h1 class="title"> Test de Mobilité  </h1>
@@ -38,8 +38,9 @@
       <p class="advice"><em> Évitez de vous tester juste après un entraînement </em></p>
     </div>
       <hr>
-
-    <button class="next-link" data-action="click->display-aptitude#display"><strong>Commencer</strong></button>
+    <div class="aptitude-button-next">
+      <button class="next-link" data-action="click->display-aptitude#display"><strong>Commencer</strong></button>
+    </div>
   </div>
 
 
@@ -56,8 +57,7 @@
          <div class="user text-center">
            <h4><b>Mobilité Épaule</b></h4>
            <hr>
-       </div>
-         </div>
+       </div class="carrousel-card">
         <div>
         <%= f.text_field :shoulder,
                         class:"d-none",
@@ -84,6 +84,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+         </div>
         </div>
       </div>
 
@@ -184,8 +185,9 @@
     </button>
     </div>
   </div>
-
+<div class="carrousel-button-next-question">
     <div data-action="click->aptitude#nextTest" class="next-link"><strong>Suivant <i class="fa-solid fa-arrow-right"></i></strong></div>
+</div>
     <%# <div>
       <%= f.text_field :ankle,
                   class:"d-none",
