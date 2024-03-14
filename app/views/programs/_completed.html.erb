@@ -1,3 +1,4 @@
+<!--
 <div class="container-notification d-none">
 
   <i class="fa-solid fa-fire-flame-curved"></i>
@@ -29,5 +30,53 @@
     <%= link_to dashboard_path do%>
     <button class="checkpoint-button">Retour</button>
     <% end %>
+  </div>
+</div>
+-->
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn-gradient" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Je valide mes exercices
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <h4>BRAVO</h4>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <div>
+          <p>Tous les objectifs sont remplis.</p>
+          <p>Tu as brûlé <%= @sum %> kcl aujourd'hui.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <%= link_to dashboard_path do%>
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Retour</button>
+        <%end%>
+
+        <%= link_to messages_path do%>
+        <button type="button" class="btn btn-success">Partagez</button>
+        <%end%>
+      </div>
+    </div>
   </div>
 </div>
