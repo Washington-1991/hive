@@ -5,7 +5,7 @@
   top: 0;
   margin-top: 0px;
   display: flex;
-  height: 10vh;
+  // height: 10vh;
   width: 100%;
   z-index: 5;
 }
@@ -38,12 +38,11 @@
 
 // topbar-logo
 .topbar-logo {
-  justify-content: flex-end;
-  width: 10vh;
+  margin: 0 auto;
 }
 
 .topbar-logo img {
-  height: 100%;
+  height: 95px;
   width: 100%;
   border-radius: 10px;
 }

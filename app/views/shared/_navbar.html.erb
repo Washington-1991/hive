@@ -1,31 +1,28 @@
 <div class="navbar-bot fixed-bottom">
 
     <%= link_to dashboard_path do%>
-  <div class="card-dashboard">
-    <div class="button-action">
+        <div class="card-dashboard">
+          <div class="button-action">
+            <button class="button-dashboard">
+            <i class="fa-solid fa-chart-line"></i>
+            </button>
+            <span>Dashboard</span>
+          </div>
 
-      <button class="button-dashboard">
-      <i class="fa-solid fa-chart-line"></i>
-      </button>
-    </div>
+        </div>
+    <% end %>
 
-    <div class="paragraph">
-      <p>Dashboard</p>
-    </div>
-  </div>
-  <% end %>
-  <%= link_to messages_path do %>
-  <div class="card-community">
-    <div class="button-action">
-      <button class="button-community">
-      <i class="fa-solid fa-users"></i>
-      </button>
-    </div>
-    <div class="paragraph">
-      <p>Communauté</p>
-    </div>
-  </div>
-  <% end %>
+    <%= link_to messages_path do %>
+      <div class="card-community">
+        <div class="button-action">
+          <button class="button-community">
+          <i class="fa-solid fa-users"></i>
+          </button>
+        </div>
+        <span>Communauté</span>
+      </div>
+    <% end %>
+
 
   <div class="dropup-center">
     <div class="button-action">
