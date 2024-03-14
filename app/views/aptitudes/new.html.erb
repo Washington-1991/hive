@@ -1,29 +1,5 @@
-<%# here is where starts the topbar-container %>
-<div class="topbar-container">
 
-  <%# topbar-avatar starts %>
-  <div class="topbar-avatar">
-   <%= image_tag  ""%>
-  </div>
-  <%# topbar-avatar ends %>
-
-  <%# topbar-information starts %>
-  <div class="topbar-information">
-    <p>Hello <%= current_user.nickname %></p>
-  </div>
-  <%# topbar-information end %>
-
-  <%# topbar-logo starts %>
-  <div class="topbar-logo">
-    <%= image_tag  "hive-logo.png"%>
-  </div>
-  <%# topbar-logo ends %>
-
-
-</div>
-<%# here is where starts the topbar-container %>
-
-
+<%= render "shared/topbar" %>
 <div class="container-aptitude" data-controller="display-aptitude" >
   <div class="info-apt" data-display-aptitude-target="information">
     <div class="info-apt-title">
