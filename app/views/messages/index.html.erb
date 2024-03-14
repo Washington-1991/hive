@@ -1,23 +1,21 @@
 <%= render "/shared/topbar" %>
 
+
+
+
 <div class="messages-container">
-
-
-
-
-  <div class="container mt-4">
-    <div class="user text-center">
-  <h1> Les posts </h1>
-  <hr>
-  </div>
+  <div class="container d-flex mt-4">
+    <div class="my-program-card-heading">
+    <%= link_to dashboard_path do%>
+    <i class="fa-solid fa-arrow-left"></i>
+    <% end %>
+    </div>
+      <div class="user text-center">
+        <h1> Les posts </h1>
+        <hr>
+      </div>
   </div>
   <!-- Button trigger modal -->
-
-
-
-
-
-
 
 <div class="messages-card-post">
 
