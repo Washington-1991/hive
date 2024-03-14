@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_12_150221) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_14_132641) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,7 +56,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_12_150221) do
     t.string "name"
     t.string "photo"
     t.integer "time"
-    t.integer "repetition"
+    t.string "repetition"
     t.float "calories"
     t.string "category"
     t.string "description"
