@@ -32,13 +32,14 @@
 // messages-card-post
 
 .card {
-  background-color: #182131;
+  background-color: #152f4ca8;
 
   color: white;
   border-radius: 40px;
 }
 
 .card img {
+  background-color: #152f4ca8;
   object-fit: cover;
   height: 300px;
   width: 300px;
@@ -49,31 +50,16 @@
 
 // modal-content
 .modal-content {
-  background-color: #182131;
+  background-color: #152f4ca8;
   border-radius: 40px;
 }
 // modal-content
 
 // reaction-buttons
-.reaction-buttons {
-  display: flex;
-  justify-content: right;
-  font-size: 24px;
-}
-
-.reaction-buttons button {
-  border: 2px solid #182131;
-  color: white;
-  border-radius: 40px;
-  margin: 8px;
-  padding: 8px;
-}
-
 .card-body h5 {
   margin-top: 8px;
 }
 .card-body {
-  background-color: #152f4ca8;
   border-radius: 40px;
 }
 // reaction-buttons
