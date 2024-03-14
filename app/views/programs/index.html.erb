@@ -1,27 +1,30 @@
 <%= render "/shared/topbar" %>
+<div class="my-program-container">
 
-<%= link_to dashboard_path do%>
-<i class="fa-solid fa-arrow-left"></i>
-<% end %>
+  <div class="my-program-card-heading">
+    <%= link_to dashboard_path do%>
+    <i class="fa-solid fa-arrow-left"></i>
+    <% end %>
+  </div>
 
-<div class="user text-center">
-  <h4><b>MON PROGRAMME</b></h4>
-  <hr>
-</div>
+    <div class="user text-center">
+      <h4><b>MON PROGRAMME</b></h4>
+      <hr>
+    </div>
 
-<div class="container-program" data-controller="details">
+    <div class="container-program" data-controller="details">
 
-  <%= render "echauffement"%>
-  <%= render "bras" %>
-  <%= render "jambes" %>
-  <%= render "other" %>
+      <%= render "echauffement"%>
+      <%= render "bras" %>
+      <%= render "jambes" %>
+      <%= render "other" %>
 
-<div class="centre" data-controller="notifications">
-  <button class="checkpoint-button" data-action="click->notifications#display" data-notifications-target="notification">Je valide mes exercices</button>
-  <%= render "completed"%>
-</div>
+    <div class="centre" data-controller="notifications">
+      <button class="checkpoint-button" data-action="click->notifications#display" data-notifications-target="notification">Je valide mes exercices</button>
+      <%= render "completed"%>
+    </div>
 
-
+    </div>
 </div>
 <br><br><br>
 <%= render "/shared/navbar" %>
