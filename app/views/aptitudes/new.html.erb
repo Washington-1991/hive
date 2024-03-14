@@ -1,33 +1,9 @@
-<%# here is where starts the topbar-container %>
-<div class="topbar-container">
 
-  <%# topbar-avatar starts %>
-  <div class="topbar-avatar">
-   <%= image_tag  ""%>
-  </div>
-  <%# topbar-avatar ends %>
-
-  <%# topbar-information starts %>
-  <div class="topbar-information">
-    <p>Hello <%= current_user.nickname %></p>
-  </div>
-  <%# topbar-information end %>
-
-  <%# topbar-logo starts %>
-  <div class="topbar-logo">
-    <%= image_tag  "hive-logo.png"%>
-  </div>
-  <%# topbar-logo ends %>
-
-
-</div>
-<%# here is where starts the topbar-container %>
-
-
+<%= render "shared/topbar" %>
 <div class="container-aptitude" data-controller="display-aptitude" >
   <div class="info-apt" data-display-aptitude-target="information">
     <div class="info-apt-title">
-      <h1 class="title"> Test de Mobilité  </h1>
+      <h1 class="title text-center"> Test de Mobilité  </h1>
       <hr>
     </div>
     <%# <h2> Bienvenue dans votre test de mobilité ! </h2> %>
@@ -38,9 +14,10 @@
       <p class="advice"><em> Évitez de vous tester juste après un entraînement </em></p>
     </div>
       <hr>
-    <div class="aptitude-button-next">
-      <button class="next-link" data-action="click->display-aptitude#display"><strong>Commencer</strong></button>
-    </div>
+    <div class="aptitude-button-next text-center">
+      <span class="next-link" data-action="click->display-aptitude#display"><strong>Commencer</strong></span>
+
+      </div>
   </div>
 
 
@@ -185,7 +162,7 @@
     </button>
     </div>
   </div>
-<div class="carrousel-button-next-question">
+<div class="carrousel-button-next-question text-center">
     <div data-action="click->aptitude#nextTest" class="next-link"><strong>Suivant <i class="fa-solid fa-arrow-right"></i></strong></div>
 </div>
     <%# <div>

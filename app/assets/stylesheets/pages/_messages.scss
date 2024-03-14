@@ -30,8 +30,6 @@
 // messages-card-button-create-post
 
 // messages-card-post
-.messages-card-post {
-}
 
 .card {
   background-color: #182131;
@@ -74,5 +72,8 @@
 .card-body h5 {
   margin-top: 8px;
 }
-
+.card-body {
+  background-color: #152f4ca8;
+  border-radius: 40px;
+}
 // reaction-buttons

@@ -4,8 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #0a1828;
-  padding: 10px;
-  margin: 20px;
+  margin: 8px;
   border-radius: 10px;
   text-align: justify;
   }
@@ -27,14 +26,22 @@
   }
 
   .btn-gradient {
-    color: white;
-    padding: 8px 24px;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: #3a4f97;
-    transition: background 0.3s ease;
-    border: 1px solid #0F60C4;
-  }
+  margin: auto;
+  font-weight: bold;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  background-color: #647bc2;
+  /* padding: 24px; */
+  border: 1px solid #647bc2;
+  border-radius: 40px;
+  /* height: 4vh; */
+  /* width: 28vh; */
+  margin: 1vh;
+  transition: background 0.3s ease;
+}
+
+
 
   .btn-gradient:hover {
     background: linear-gradient(#147EFF, #0F67DA);
@@ -71,11 +78,19 @@ img {
 }
 
 .container-notification {
-  text-align: center;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: #112740;
+  margin: auto;
+  font-weight: bold;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  background-color: #647bc2;
+  /* padding: 24px; */
+  border: 1px solid #647bc2;
+  border-radius: 40px;
+  /* height: 4vh; */
+  /* width: 28vh; */
+  margin: 1vh;
+  transition: background 0.3s ease;
 }
 
 .centre {
